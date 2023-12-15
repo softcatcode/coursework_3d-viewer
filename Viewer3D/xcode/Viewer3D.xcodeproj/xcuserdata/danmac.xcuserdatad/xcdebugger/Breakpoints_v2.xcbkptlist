@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AE7DE659-5D6B-49FF-9284-074521C5DF7D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC328EBE-4094-4EF5-9057-1AEDA4C9F689"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "getTransmittedSegment(beamSeg, collision, object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B4CCB1E-1A26-4648-8CBB-870BB1295EBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2B4CCB1E-1A26-4648-8CBB-870BB1295EBC - db9979a70fcbe83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initTracerBeams(RayTracer&amp;, Observer const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "2B4CCB1E-1A26-4648-8CBB-870BB1295EBC - db9979a70fcbe83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initTracerBeams(RayTracer&amp;, Observer const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EA6EEAE-3AA9-4C18-90B3-20B6EB209B37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7E3D058-6E03-49BD-AFE0-3F6EA41C5CB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A8DF67C-DC55-4884-BE71-74089A3AE012"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "8A8DF67C-DC55-4884-BE71-74089A3AE012 - db9979a70fcbe07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initTracerBeams(RayTracer&amp;, Observer const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  uuid = "8A8DF67C-DC55-4884-BE71-74089A3AE012 - db9979a70fcbe07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initTracerBeams(RayTracer&amp;, Observer const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "8A8DF67C-DC55-4884-BE71-74089A3AE012 - db9979a70fcbe45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initTracerBeams(RayTracer&amp;, Observer const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8B2E584-2F38-4CA0-8CBB-360F81CC3A57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BB7200F-438A-4426-BD99-1352F06AFDCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "initTracerBeams(tracer, camera, imgWidth, imgHeight)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83A503D0-99A4-44AE-BDA5-783968C8C63D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "operationmanager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "execute(data, request)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "860D735F-7D98-462F-8BC8-94C890E139B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "readStage(stage, fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "860D735F-7D98-462F-8BC8-94C890E139B5 - 46e3c761c0301959"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "402">
+               </Location>
+               <Location
+                  uuid = "860D735F-7D98-462F-8BC8-94C890E139B5 - 46e3c761c0301959"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "483">
+               </Location>
+               <Location
+                  uuid = "860D735F-7D98-462F-8BC8-94C890E139B5 - 46e3c761c03018b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "569">
+               </Location>
+               <Location
+                  uuid = "860D735F-7D98-462F-8BC8-94C890E139B5 - 46e3c761c0301813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "698">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FD05A5C-A1B1-430B-89E3-AD021A1E1EBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "readStage(stage, fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD51A576-C79E-4E6E-81D7-1D591F3D161F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "readSphere()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8B3ACDE-861B-44C2-9781-504498109EDF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shadowmap.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "buildShadowMaps(objects, transformers, sources, imgWidth, imgHeight)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "C8B3ACDE-861B-44C2-9781-504498109EDF - b4bb2486bc9fcfd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "C8B3ACDE-861B-44C2-9781-504498109EDF - b4bb2486bc9fc79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "C8B3ACDE-861B-44C2-9781-504498109EDF - 3fb54b87b8c6df94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;TransformMatrix, std::__1::allocator&lt;TransformMatrix&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "C8B3ACDE-861B-44C2-9781-504498109EDF - 8bcf5e539b61c67b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;Transformer, std::__1::allocator&lt;Transformer&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D8F3E31-05BA-4670-9120-F89483F0D28D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "buildPlanesForTriangles(triangles, points)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "9D8F3E31-05BA-4670-9120-F89483F0D28D - 95116cef0e088861"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildPlanesForTriangles(std::__1::vector&lt;Triangle, std::__1::allocator&lt;Triangle&gt;&gt;&amp;, std::__1::vector&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9D8F3E31-05BA-4670-9120-F89483F0D28D - 95116cef0e088861"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildPlanesForTriangles(std::__1::vector&lt;Triangle, std::__1::allocator&lt;Triangle&gt;&gt;&amp;, std::__1::vector&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CCE1CE2-C5A3-4267-944A-EFB6688F6D98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "readSphere()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CF1FB14-C9DB-4DC1-80FC-74F7A8D8BD23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "buildPlanesForTriangles(triangles, points)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0CF1FB14-C9DB-4DC1-80FC-74F7A8D8BD23 - 95116cef0e0888cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildPlanesForTriangles(std::__1::vector&lt;Triangle, std::__1::allocator&lt;Triangle&gt;&gt;&amp;, std::__1::vector&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  uuid = "0CF1FB14-C9DB-4DC1-80FC-74F7A8D8BD23 - 95116cef0e0888ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildPlanesForTriangles(std::__1::vector&lt;Triangle, std::__1::allocator&lt;Triangle&gt;&gt;&amp;, std::__1::vector&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;, std::__1::allocator&lt;glm::vec&lt;3, float, (glm::qualifier)0&gt;&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "197">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7463BB96-CEB1-4CA7-8DB5-78FCB068F8B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "Triangle::setPlane(ratios)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "777CFCE0-9307-4A33-A4BC-7A6A0AF5AF53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "transformObject(object, transformer)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "777CFCE0-9307-4A33-A4BC-7A6A0AF5AF53 - d6d2083c944ca55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "transformObject(Object&amp;, glm::mat&lt;3, 3, float, (glm::qualifier)0&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "777CFCE0-9307-4A33-A4BC-7A6A0AF5AF53 - d6d2083c944ca55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "transformObject(Object&amp;, glm::mat&lt;3, 3, float, (glm::qualifier)0&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "777CFCE0-9307-4A33-A4BC-7A6A0AF5AF53 - 50bd3d1f18008da4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "transformObject(Object&amp;, Transformer const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "777CFCE0-9307-4A33-A4BC-7A6A0AF5AF53 - 50bd3d1f18008da4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "transformObject(Object&amp;, Transformer const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/stageobj.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12A7881B-3C8C-4E32-86D5-4FE3AE158671"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "sortByY(a, b, c)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4C01489-F6CA-49D7-AB0B-AF61EFA2A50E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shadowmap.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "updateShadowMapByTriangle(shadowMap, tr, points, objProp)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "F4C01489-F6CA-49D7-AB0B-AF61EFA2A50E - 8cd08e6ff77d1780"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "updateShadowMapByTriangle(std::__1::vector&lt;std::__1::vector&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&gt;&gt;&gt;&gt;&amp;, Triangle const&amp;, glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;&amp;, ObjectProperties const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "F4C01489-F6CA-49D7-AB0B-AF61EFA2A50E - 8cd08e6ff77d1704"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "updateShadowMapByTriangle(std::__1::vector&lt;std::__1::vector&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;, std::__1::allocator&lt;std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&gt;&gt;&gt;&gt;&amp;, Triangle const&amp;, glm::mat&lt;3, 3, float, (glm::qualifier)0&gt;&amp;, ObjectProperties const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EEC02CF-7594-4518-B133-5235D7056175"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "buildLine(x1, y1, x2, y2)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "readStage(stage, fileName)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "277">
+               </Location>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c030199f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c030199f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "246">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "712722E4-91E2-4EC7-8772-9ED8658B79DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ioutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "readStage(stage, fileName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C31B6D43-A344-4509-B28E-9A16FE3C2284"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "initRayTracer(tracer, stage, imgWidth, imgHeight)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "C31B6D43-A344-4509-B28E-9A16FE3C2284 - d30eddecab8c6820"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initRayTracer(RayTracer&amp;, Stage const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "C31B6D43-A344-4509-B28E-9A16FE3C2284 - d30eddecab8c68e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initRayTracer(RayTracer&amp;, Stage const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "978BCCCB-B442-4F4C-927D-1C866625CF4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "transformPoint(point, transformer)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43AFCDC5-BF9A-4DD7-B4E8-C2DDFFCDE498"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "buildTransformer(point, i, j, k)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D439407A-89ED-43FB-B9AC-AF45DAAD76ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shadowmap.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "buildShadowMaps(objects, transformers, sources, imgWidth, imgHeight)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "D439407A-89ED-43FB-B9AC-AF45DAAD76ED - 8bcf5e539b61c8ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;Transformer, std::__1::allocator&lt;Transformer&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "499">
+               </Location>
+               <Location
+                  uuid = "D439407A-89ED-43FB-B9AC-AF45DAAD76ED - 8bcf5e539b61c8ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "buildShadowMaps(std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;Transformer, std::__1::allocator&lt;Transformer&gt;&gt; const&amp;, unsigned int, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/shadowmap.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C402E52-80B7-4831-9C1F-FFF37FDCE57C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rsmelem.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "calcBrightnessForRSMElem(elem, power)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6C402E52-80B7-4831-9C1F-FFF37FDCE57C - a4cbc3083095d6d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcBrightnessForRSMElem(std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/rsmelem.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "6C402E52-80B7-4831-9C1F-FFF37FDCE57C - b10bc7642cb44c3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcBrightnessForRSMElem(std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&amp;, float)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/rsmelem.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "98">
+               </Location>
+               <Location
+                  uuid = "6C402E52-80B7-4831-9C1F-FFF37FDCE57C - b10bc7642cb44cdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcBrightnessForRSMElem(std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&amp;, float)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/rsmelem.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "130">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2378A35-1E7D-4A92-9DFB-CF4D5F961F38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shadowmap.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "buildShadowMaps(objects, transformers, sources, imgWidth, imgHeight)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "319205B4-0450-4670-B01C-4998D0C9B4B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "buildSphere(object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36FAFB36-396A-4CBB-B47A-8CF125F07B4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "buildSphere(object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51D887A4-DD17-4AC4-A0E6-221666B66743"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "trace(tracer, step)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "51D887A4-DD17-4AC4-A0E6-221666B66743 - 19d1d1b982e19248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "51D887A4-DD17-4AC4-A0E6-221666B66743 - 19d1d1b982e19397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C4F4DD5-7BC7-468C-BEAD-EB45A4ECB68C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "findNextCollision(beamSeg, objects, spheres)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "4C4F4DD5-7BC7-468C-BEAD-EB45A4ECB68C - bec619fbffc33fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "4C4F4DD5-7BC7-468C-BEAD-EB45A4ECB68C - bec619fbffc3366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "4C4F4DD5-7BC7-468C-BEAD-EB45A4ECB68C - bec619fbffc3324"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E7E2FF4-0208-44C3-B4AB-D0BF8FF7C21F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "findNextCollision(beamSeg, objects, spheres)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "7E7E2FF4-0208-44C3-B4AB-D0BF8FF7C21F - bec619fbffc2d89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "575">
+               </Location>
+               <Location
+                  uuid = "7E7E2FF4-0208-44C3-B4AB-D0BF8FF7C21F - bec619fbffc2dea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "607">
+               </Location>
+               <Location
+                  uuid = "7E7E2FF4-0208-44C3-B4AB-D0BF8FF7C21F - bec619fbffc2dea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "627">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2732655B-02E6-402B-8D33-B31043CD0A13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "findNextCollision(beamSeg, objects, spheres)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2732655B-02E6-402B-8D33-B31043CD0A13 - bec619fbffc3281"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  uuid = "2732655B-02E6-402B-8D33-B31043CD0A13 - bec619fbffc32e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "129">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3DA43F5-DB8F-4F68-91D2-D5FF8343ADDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "findNextCollision(beamSeg, objects, spheres)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "F3DA43F5-DB8F-4F68-91D2-D5FF8343ADDC - bec619fbffc2da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "526">
+               </Location>
+               <Location
+                  uuid = "F3DA43F5-DB8F-4F68-91D2-D5FF8343ADDC - bec619fbffc324f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "494">
+               </Location>
+               <Location
+                  uuid = "F3DA43F5-DB8F-4F68-91D2-D5FF8343ADDC - bec619fbffc2da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "findNextCollision(BeamSegment, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/beamsegment.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "546">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "528B5970-6E62-44BB-B8CE-1A35F1584144"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "afterTransitionDir(r, n, k1, k2)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9C52CF2-C0DB-48EC-B190-B034E9222A92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "getTransmittedSegment(beamSeg, collision, object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "292AC39A-4F09-4BAF-8465-F3D4ABE97828"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "getTransmittedSegment(beamSeg, collision, object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99D0583A-7F39-4A1D-B752-FECFA95C36FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "stageobj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "transformObject(object, transformer)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD3FAEB3-8592-4A3D-8C77-BCEE5E6277FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "getTransmittedSegment(beamSeg, collision, object)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23345EF8-EA05-41E6-9EBC-A18D576117DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rsmelem.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "calcBrightnessForRSMElem(elem, power)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "23345EF8-EA05-41E6-9EBC-A18D576117DC - b10bc7642cb44cdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcBrightnessForRSMElem(std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&amp;, float)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/rsmelem.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "23345EF8-EA05-41E6-9EBC-A18D576117DC - b10bc7642cb44cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcBrightnessForRSMElem(std::__1::vector&lt;Collision, std::__1::allocator&lt;Collision&gt;&gt;&amp;, float)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/rsmelem.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C15091ED-B8FE-4089-BC7D-8B3181560CB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beam.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getColor(beam)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF9BAA65-8C91-42D9-881C-4AA908876B78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rsmelem.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "calcBrightnessForRSMElem(elem, power)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7ECC09A-D907-4E12-B6F3-F857F3BAC8A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "trace(tracer, step)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88BCBECE-3EB8-43D2-9565-14E6613E0D48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rsmelem.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "deleteDuplicates(rsmElem)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
