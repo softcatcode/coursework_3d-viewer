@@ -33,6 +33,7 @@ public:
     void update() override;
     void draw() override;
     void mouseDown(MouseEvent event) override;
+    void keyDown(KeyEvent event) override;
     unsigned getImgWidth() const { return data.imgWidth; }
     unsigned getImgHeigtht() const { return data.imgHeight; }
     unsigned getStep() const { return data.step; }

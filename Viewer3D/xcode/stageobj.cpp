@@ -68,6 +68,28 @@ void buildPlanesForTriangles(
     }
 }
 
+void translateCamera(Observer& camera, vec3 step)
+{
+    camera.location = camera.location + step.x * camera.x + step.y * camera.y + step.z * camera.z;
+}
+
+void rotateCamera(Observer& camera, char axis, float angle)
+{
+    if (axis == 'x') {
+        mat3 m = rotate(angle, camera.x);
+        camera.y = camera.y * m;
+        camera.z = camera.z * m;
+    } else if (axis == 'y') {
+        mat3 m = rotate(angle, camera.y);
+        camera.x = camera.x * m;
+        camera.z = camera.z * m;
+    } else if (axis == 'z') {
+        mat3 m = rotate(angle, camera.z);
+        camera.x = camera.x * m;
+        camera.y = camera.y * m;
+    }
+}
+
 vector<Object> transformedObjects(vector<Object> const& objects, Transformer const& transformer)
 {
     vector<Object> result = objects;

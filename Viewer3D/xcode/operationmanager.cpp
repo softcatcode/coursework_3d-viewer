@@ -28,6 +28,7 @@ void execute(DrawAlgoData& data, int request)
             break;
         case TRACE_RAYS:
             data.image = trace(data.tracer, data.step);
+            data.needsUpdate = false;
             break;
         case DRAW_GENERATED_IMG:
             drawImage(data.image);

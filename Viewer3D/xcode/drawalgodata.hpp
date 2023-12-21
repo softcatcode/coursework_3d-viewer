@@ -18,6 +18,9 @@ struct DrawAlgoData
     RayTracer tracer;
     unsigned imgWidth, imgHeight, step;
     Surface image;
+    bool needsUpdate = true;
 };
+
+bool needsUpdate(DrawAlgoData const& data);
 
 #endif /* drawalgodata_hpp */

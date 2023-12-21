@@ -221,8 +221,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "readStage(stage, fileName)"
             landmarkType = "9">
             <Locations>
@@ -688,114 +688,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ioutils.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "readStage(stage, fileName)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "101">
-               </Location>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "182">
-               </Location>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c0301e7e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "277">
-               </Location>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c030199f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "132"
-                  endingLineNumber = "132"
-                  offsetFromSymbolStart = "151">
-               </Location>
-               <Location
-                  uuid = "1143596A-E9A5-4EBF-88FE-AE5AFBBF5342 - 46e3c761c030199f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "readStage(Stage&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const&amp;)"
-                  moduleName = "Viewer3D"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/ioutils.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "132"
-                  endingLineNumber = "132"
-                  offsetFromSymbolStart = "246">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "712722E4-91E2-4EC7-8772-9ED8658B79DD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -803,8 +695,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "readStage(stage, fileName)"
             landmarkType = "9">
          </BreakpointContent>

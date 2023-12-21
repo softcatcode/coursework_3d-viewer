@@ -25,6 +25,8 @@
 		3487C13E02D643F384549856 /* b2ChainAndCircleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E80F01C3C9D14D0A97B9DCC5 /* b2ChainAndCircleContact.cpp */; };
 		35A09E0A2B2B4D71001C1550 /* brightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A09E082B2B4D71001C1550 /* brightness.cpp */; };
 		35A09E0D2B2B577C001C1550 /* tracing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A09E0B2B2B577C001C1550 /* tracing.cpp */; };
+		35A09E102B2D9667001C1550 /* keyrespond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A09E0E2B2D9667001C1550 /* keyrespond.cpp */; };
+		35A09E132B2D9873001C1550 /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A09E112B2D9873001C1550 /* controller.cpp */; };
 		35C4153E2B0F9C0700D45B0D /* logs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C4153C2B0F9C0700D45B0D /* logs.cpp */; };
 		35C4154D2B0FAD0800D45B0D /* ioutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C4154B2B0FAD0800D45B0D /* ioutils.cpp */; };
 		35C415532B0FD65500D45B0D /* drawutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C415512B0FD65500D45B0D /* drawutils.cpp */; };
@@ -124,6 +126,10 @@
 		35A09E092B2B4D71001C1550 /* brightness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = brightness.hpp; sourceTree = "<group>"; };
 		35A09E0B2B2B577C001C1550 /* tracing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tracing.cpp; sourceTree = "<group>"; };
 		35A09E0C2B2B577C001C1550 /* tracing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tracing.hpp; sourceTree = "<group>"; };
+		35A09E0E2B2D9667001C1550 /* keyrespond.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keyrespond.cpp; sourceTree = "<group>"; };
+		35A09E0F2B2D9667001C1550 /* keyrespond.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keyrespond.hpp; sourceTree = "<group>"; };
+		35A09E112B2D9873001C1550 /* controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = controller.cpp; sourceTree = "<group>"; };
+		35A09E122B2D9873001C1550 /* controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = controller.hpp; sourceTree = "<group>"; };
 		35C4153C2B0F9C0700D45B0D /* logs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = logs.cpp; sourceTree = "<group>"; };
 		35C4153D2B0F9C0700D45B0D /* logs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = logs.hpp; sourceTree = "<group>"; };
 		35C4154B2B0FAD0800D45B0D /* ioutils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ioutils.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
@@ -348,6 +354,8 @@
 				35C415912B14F1DB00D45B0D /* collision.cpp */,
 				35A09E082B2B4D71001C1550 /* brightness.cpp */,
 				35A09E0B2B2B577C001C1550 /* tracing.cpp */,
+				35A09E0E2B2D9667001C1550 /* keyrespond.cpp */,
+				35A09E112B2D9873001C1550 /* controller.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -468,6 +476,8 @@
 				1E6C826CA94749829F183676 /* Viewer3D_Prefix.pch */,
 				35C415952B1604FE00D45B0D /* parameters.hpp */,
 				35A09E0C2B2B577C001C1550 /* tracing.hpp */,
+				35A09E0F2B2D9667001C1550 /* keyrespond.hpp */,
+				35A09E122B2D9873001C1550 /* controller.hpp */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -673,6 +683,7 @@
 				5B5B9815B9814491897168B2 /* b2DynamicTree.cpp in Sources */,
 				35C4153E2B0F9C0700D45B0D /* logs.cpp in Sources */,
 				BB10EA53A9BC4891B8973F96 /* b2TimeOfImpact.cpp in Sources */,
+				35A09E102B2D9667001C1550 /* keyrespond.cpp in Sources */,
 				8C2E1A9B921B46C9B0AD4180 /* b2ChainShape.cpp in Sources */,
 				35C415872B11BB8F00D45B0D /* beam.cpp in Sources */,
 				E83CD84F1DDD4CCC9D9F6F00 /* b2CircleShape.cpp in Sources */,
@@ -718,6 +729,7 @@
 				7F11A5E6EEC1469A8156E97B /* b2MouseJoint.cpp in Sources */,
 				980AED89E33E4869A48D3328 /* b2PrismaticJoint.cpp in Sources */,
 				35A09E0A2B2B4D71001C1550 /* brightness.cpp in Sources */,
+				35A09E132B2D9873001C1550 /* controller.cpp in Sources */,
 				D495E66AB0E94F47B5AA5100 /* b2PulleyJoint.cpp in Sources */,
 				A87DCBC8DEE24E2181500A77 /* b2RevoluteJoint.cpp in Sources */,
 				35C415652B0FD99500D45B0D /* stage.cpp in Sources */,

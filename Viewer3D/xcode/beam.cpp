@@ -27,15 +27,7 @@ Color getColor(Beam const& beam)
         }
     }
     Color result = backgroundColor;
-    if (wereValidRays) {
-//        float maxVal = max(max(color.r, color.g), color.b);
-//        if (maxVal > 0) {
-//            color = (maxVal / min(255.f, maxVal)) * color;
-//            result.r = (unsigned char) color.r;
-//            result.g = (unsigned char) color.g;
-//            result.b = (unsigned char) color.b;
-//        }
-        result = color * (1 / powerSum);
-    }
+    if (wereValidRays)
+        result = color / powerSum;
     return result;
 }

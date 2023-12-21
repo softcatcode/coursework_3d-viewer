@@ -13,7 +13,7 @@
 #define MAX_DIST 1000.f
 using namespace cinder;
 
-const Color backgroundColor = Color(255, 255, 255);
+const Color backgroundColor = Color(100, 100, 250);
 const float spaceOptDensity = 1;
 
 #endif /* parameters_hpp */

@@ -33,9 +33,9 @@ void initRayTracer(
 ) {
     tracer.transformers = getSourceTransformers(stage.sources);
     tracer.objects = stage.objects;
-    tracer.sourceMaps = buildShadowMaps(
-        tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
-    );
+//    tracer.sourceMaps = buildShadowMaps(
+//        tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
+//    );
     tracer.spheres = buildSpheres(tracer.objects);
     tracer.sources = stage.sources;
     initTracerBeams(tracer, stage.camera, imgWidth, imgHeight);

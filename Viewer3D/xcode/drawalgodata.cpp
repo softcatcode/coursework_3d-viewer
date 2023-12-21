@@ -6,3 +6,8 @@
 //
 
 #include "drawalgodata.hpp"
+
+bool needsUpdate(DrawAlgoData const& data)
+{
+    return data.needsUpdate;
+}

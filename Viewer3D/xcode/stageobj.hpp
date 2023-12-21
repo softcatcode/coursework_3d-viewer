@@ -43,6 +43,10 @@ void transformSource(LightSource& source, Transformer const& transformer);
 
 void transformCamera(Observer& camera, Transformer const& transformer);
 
+void translateCamera(Observer& camera, vec3 step);
+
+void rotateCamera(Observer& camera, char axis, float angle);
+
 vector<Object> transformedObjects(vector<Object> const& objects, Transformer const& transformer);
 
 Sphere buildSphere(Object const& object);

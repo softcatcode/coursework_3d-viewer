@@ -70,7 +70,7 @@ vec3 reflectionDir(vec3 const& r, vec3 const& n)
 vec3 afterTransitionDir(vec3 const& r, vec3 const& n, float k1, float k2)
 {
     vec3 x = normalize(cross(n, cross(r, n)));
-    float sinA = dot(r, x);
+    float sinA = dot(r, x); // (\vec{r};vec{R})
     float sinB = k1 / k2 * sinA;
     float cosB = sqrt(1 - sinB * sinB);
     return sinB * x - cosB * n;

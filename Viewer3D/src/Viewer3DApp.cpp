@@ -1,4 +1,5 @@
 #include "viewer3d.hpp"
+#include "keyrespond.hpp"
 #include "logs.hpp"
 #include "interfacemanager.hpp"
 #include "cinder/app/RendererGl.h"
@@ -21,6 +22,11 @@ void Viewer3DApp::draw()
 
 void Viewer3DApp::mouseDown(MouseEvent event)
 {
+}
+
+void Viewer3DApp::keyDown(KeyEvent event)
+{
+    respondToKey(data, event.getCode());
 }
 
 CINDER_APP(Viewer3DApp, RendererGl);

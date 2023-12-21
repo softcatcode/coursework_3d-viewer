@@ -104,5 +104,5 @@ float traceBrightness(
         }
         result += k * source.power / length(srcVec);
     }
-    return result;
+    return min(1.f, result);
 }
