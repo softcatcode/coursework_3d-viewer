@@ -17,17 +17,17 @@ void initBeam(Beam& beam, vec3 const& point, vec3 const& direction)
 Color getColor(Beam const& beam)
 {
     Color color(0.f, 0.f, 0.f);
-    bool wereValidRays = false;
-    float powerSum = EPS;
+    unsigned count = 0U;
     for (auto const& seg: beam) {
         if (seg.collisionCount > 0) {
-            color += seg.color * seg.power;
-            powerSum += seg.power;
-            wereValidRays = true;
+            color += seg.color;
+            ++count;
         }
     }
-    Color result = backgroundColor;
-    if (wereValidRays)
+    Color result;
+    if (count > 0)
         result = color / powerSum;
+    else
+        result = backgroundColor;
     return result;
 }

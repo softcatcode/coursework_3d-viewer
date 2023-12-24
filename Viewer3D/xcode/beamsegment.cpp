@@ -12,9 +12,14 @@
 #include <memory>
 using namespace std;
 
+float colorPower(Color const&  color)
+{
+    return color.r + color.g + color.b;
+}
+
 bool accuracyNotReached(BeamSegment const& seg)
 {
-    return seg.power > MIN_RAY_POWER && seg.collisionCount < MAX_REFL_COUNT;
+    return colorPower(seg.color) > MIN_RAY_POWER && seg.collisionCount < MAX_REFL_COUNT;
 }
 
 unique_ptr<Collision> rayObjectCollision(Ray const& ray, Object const& object)

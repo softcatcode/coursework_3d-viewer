@@ -21,7 +21,6 @@ struct BeamSegment
 {
     Ray ray;
     Color color;
-    float power;
     unsigned collisionCount;
 };
 

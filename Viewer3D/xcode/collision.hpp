@@ -9,6 +9,7 @@
 #define collision_hpp
 
 #include "objproperties.hpp"
+#include "parameters.hpp"
 #include <vector>
 using namespace cinder;
 using namespace std;
@@ -21,7 +22,8 @@ struct Collision
     union {
         float dist, z;
     };
-    float brightness = -1.f, delta = 0.f;
+    float delta = 0.f;
+    Color color = backgroundColor;
     
     Color color() const { return objProp.color; }
     vec3 point() const { return vec3(x, y, dist); }

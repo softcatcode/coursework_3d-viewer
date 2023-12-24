@@ -84,7 +84,7 @@ void rotateCamera(Observer& camera, char axis, float angle)
         camera.x = camera.x * m;
         camera.z = camera.z * m;
     } else if (axis == 'z') {
-        mat3 m = rotate(angle, camera.z);
+        mat3 m = rotate(unit, camera.z);
         camera.x = camera.x * m;
         camera.y = camera.y * m;
     }

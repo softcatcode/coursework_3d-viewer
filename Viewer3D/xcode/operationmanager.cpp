@@ -23,7 +23,8 @@ void execute(DrawAlgoData& data, int request)
                 data.tracer,
                 data.stage,
                 data.imgWidth,
-                data.imgHeight
+                data.imgHeight,
+                BrightnessCalcMethod::tracing
             );
             break;
         case TRACE_RAYS:

@@ -27,12 +27,14 @@ struct Object
 struct Observer
 {
     vec3 location, x, y, z;
+    
+    vec3 getLocation { return location; }
 };
 
 struct LightSource
 {
     vec3 location, x, y, z;
-    float power;
+    Color color;
 };
 
 vector<Transformer> getSourceTransformers(vector<LightSource> const& sources);

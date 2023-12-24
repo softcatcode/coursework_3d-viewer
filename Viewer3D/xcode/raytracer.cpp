@@ -29,17 +29,42 @@ void initTracerBeams(RayTracer& tracer, Observer const& camera, unsigned imgWidt
 void initRayTracer(
     RayTracer& tracer,
     Stage const& stage,
-    unsigned imgWidth, unsigned imgHeight
+    unsigned imgWidth,
+    unsigned imgHeight,
+    BrightnessCalcMethod method
 ) {
-    tracer.transformers = getSourceTransformers(stage.sources);
     tracer.objects = stage.objects;
-//    tracer.sourceMaps = buildShadowMaps(
-//        tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
-//    );
     tracer.spheres = buildSpheres(tracer.objects);
-    tracer.sources = stage.sources;
     initTracerBeams(tracer, stage.camera, imgWidth, imgHeight);
+    tracer.imgWidth = imgWidth;
+    tracer.imgHeight = imgHeight;
+    if (method == BrightnessCalcMethod::rsm) {
+        tracer.sourceMaps = buildShadowMaps(
+            tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
+        );
+        tracer.transformers = getSourceTransformers(stage.sources);
+    } else if (method == BrightnessCalcMethod::tracing) {
+        tracer.sources = stage.sources;
+        tracer.cameraLocation = stage.camera.getLocation()
+    }
     log("initRayTracer");
+}
+
+Color trace(RayTracer& tracer, unsigned i, unsigned j)
+{
+    BrightnessCalcArgs args;
+    switch (tracer.method) {
+        case BrightnessCalcMethod::rsm:
+            args.methodRSMArgs.putArg2(tracer.sourceMaps);
+            args.methodRSMArgs.putArg3(tracer.transformers);
+            break;
+        case BrightnessCalcMethod::tracing:
+            args.methodTracingArgs.putArg2(tracer.sources);
+            args.methodTracingArgs.putArg3(tracer.objects);
+            args.methodTracingArgs.putArg4(tracer.spheres);
+            break;
+    }
+    return traceBeam(tracer.data[i][j], tracer.objects, tracer.spheres, args);
 }
 
 Surface trace(RayTracer& tracer, unsigned step)
@@ -51,12 +76,7 @@ Surface trace(RayTracer& tracer, unsigned step)
     unsigned i = 0, j = 0;
     while (iter.line()) {
         while (iter.pixel()) {
-            Color color = traceRay(
-                tracer.data[i][j],
-                tracer.objects,
-                tracer.spheres,
-                tracer.sources
-            );
+            Color color = trace(tracer, i, j);
             iter.r() = (unsigned char) color.r;
             iter.g() = (unsigned char) color.g;
             iter.b() = (unsigned char) color.b;
