@@ -112,7 +112,11 @@ Surface trace(RayTracer& tracer, unsigned step)
     unsigned i = 0, j = 0;
     while (iter.line()) {
         while (iter.pixel()) {
+            if (i == 346 && j == 443) {
+                int debug_point = 0;
+            }
             Color color = trace(tracer, i, j);
+            cout << i << ' ' << j << ' ' << color << endl;
             iter.r() = (unsigned char) color.r;
             iter.g() = (unsigned char) color.g;
             iter.b() = (unsigned char) color.b;

@@ -15,15 +15,27 @@ pair<BeamSegment, BeamSegment> split(BeamSegment const& beamSeg, Collision const
     vec3 point = collision.point();
     vec3 reflDir = reflectionDir(beamSeg.ray.getDirection(), collision.n);
     Ray transRay = transmittedRay(beamSeg.ray, obj, point, collision.n, collision.optDensity());
-    Color reflColor = min(collision.color, obj.getColor());
-    Color transColor;
-    if (beamSeg.collisionCount > 0) {
-        reflColor = min(beamSeg.color, reflColor);
-        transColor = (beamSeg.color - reflColor) * collision.transmission();
-    } else
-        transColor = (collision.color - reflColor) * collision.transmission();
-    BeamSegment reflected = { Ray(point + (0.01f * reflDir), reflDir), reflColor, beamSeg.collisionCount + 1 };
-    BeamSegment transmitted = { transRay, transColor, beamSeg.collisionCount + 1 };
+    
+    // calculating beam intensity
+    Color light;
+    if (beamSeg.collisionCount > 0)
+        light = min(collision.color, beamSeg.color);
+    else
+        light = collision.color;
+    
+    Color transLight = light * collision.transmission();
+    Color reflLight = min(light - transLight, obj.getColor());
+    
+    BeamSegment reflected = {
+        Ray(point + 0.01f * reflDir, reflDir),
+        reflLight,
+        beamSeg.collisionCount + 1
+    };
+    BeamSegment transmitted = {
+        transRay,
+        transLight,
+        beamSeg.collisionCount + 1
+    };
     return { reflected, transmitted };
 }
 

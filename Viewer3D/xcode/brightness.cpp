@@ -75,11 +75,10 @@ Color rsmBrightness(
 Color sourceLight(
     LightSource const& source,
     vec3 const& point,
-    float diffuseRatio,
     vector<Object> const& objects,
     vector<Sphere> const& spheres
 ) {
-    float k = diffuseRatio, passedDist = 0.f;
+    float k = 1.f, passedDist = 0.f;
     vec3 srcVec = source.location - point;
     vec3 srcDir = normalize(srcVec);
     float srcDist = length(srcVec);
@@ -99,7 +98,7 @@ Color sourceLight(
         else
             nextCollisionExists = false;
     }
-    return k * source.color / length(srcVec);
+    return k * source.color;
 }
 
 Color traceBrightness(
@@ -109,10 +108,9 @@ Color traceBrightness(
     vector<Sphere> const& spheres
 ) {
     vec3 point = collision.point();
-    float d = collision.diffuse();
     Color result(0.f, 0.f, 0.f);
     for (auto const& src: sources)
-        result += sourceLight(src, point, d, objects, spheres);
+        result += sourceLight(src, point, objects, spheres);
     return result;
 }
 
@@ -133,9 +131,9 @@ Color fongBrightness(
     Color result = backgroundLight;
     for (auto const& src: sources) {
         vec3 srcDir = normalize(src.location - point);
-        Color light = sourceLight(src, point, d, objects, spheres);
-        result += d * dot(srcDir, n) * light;
-        result += r * dot(reflDir, camDir) * light;
+        Color light = sourceLight(src, point, objects, spheres);
+        result += d * max(dot(srcDir, n), 0.f) * light;
+        result += r * max(dot(reflDir, camDir), 0.f) * light;
     }
     return result;
 }

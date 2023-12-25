@@ -1315,8 +1315,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "trace(tracer, step)"
             landmarkType = "9">
             <Locations>
@@ -1408,10 +1408,106 @@
             filePath = "tracing.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "traceBeam(beam, objects, spheres, brCalcArgs)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9640A7B-B7EB-45AA-8E3D-5A9A3E10C4A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "raytracer.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "trace(tracer, step)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A9640A7B-B7EB-45AA-8E3D-5A9A3E10C4A1 - 19d1d1b982e1a4f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "326">
+               </Location>
+               <Location
+                  uuid = "A9640A7B-B7EB-45AA-8E3D-5A9A3E10C4A1 - 19d1d1b982e1a4f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "329">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34B75B20-D33E-477E-A0A4-34A2A2C13712"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "brightness.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "fongBrightness(collision, sources, objects, spheres, cameraLocation, rayDir)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "34B75B20-D33E-477E-A0A4-34A2A2C13712 - fd2a2a77948032bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fongBrightness(Collision const&amp;, std::__1::vector&lt;LightSource, std::__1::allocator&lt;LightSource&gt;&gt; const&amp;, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;, glm::vec&lt;3, float, (glm::qualifier)0&gt; const&amp;, glm::vec&lt;3, float, (glm::qualifier)0&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/brightness.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "34B75B20-D33E-477E-A0A4-34A2A2C13712 - fd2a2a77948032ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fongBrightness(Collision const&amp;, std::__1::vector&lt;LightSource, std::__1::allocator&lt;LightSource&gt;&gt; const&amp;, std::__1::vector&lt;Object, std::__1::allocator&lt;Object&gt;&gt; const&amp;, std::__1::vector&lt;cinder::Sphere, std::__1::allocator&lt;cinder::Sphere&gt;&gt; const&amp;, glm::vec&lt;3, float, (glm::qualifier)0&gt; const&amp;, glm::vec&lt;3, float, (glm::qualifier)0&gt; const&amp;)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/brightness.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
