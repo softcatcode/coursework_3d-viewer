@@ -29,8 +29,6 @@ void execute(DrawAlgoData& data, int request)
             break;
         case TRACE_RAYS:
             data.image = trace(data.tracer, data.step);
-            if (data.step == 1)
-                data.stopUpdate();
             break;
         case DRAW_GENERATED_IMG:
             drawImage(data.image);
@@ -40,6 +38,8 @@ void execute(DrawAlgoData& data, int request)
             break;
         case UPDATE_STEP:
             data.step = getNewDrawStep(data.step);
+            if (data.step == 0U)
+                data.stopUpdate();
             break;
     }
 }

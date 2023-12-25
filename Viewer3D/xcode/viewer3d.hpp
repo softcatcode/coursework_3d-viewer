@@ -23,7 +23,7 @@ public:
     mutable DrawAlgoData data;
     
     Viewer3DApp(): App() {
-        data.step = 1;
+        data.step = 8;
         data.imgWidth = unsigned(getWindowWidth());
         data.imgHeight = unsigned(getWindowHeight());
         cout << "WxH: " << data.imgWidth << ' ' << data.imgHeight << '\n';

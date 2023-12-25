@@ -23,7 +23,10 @@ struct DrawAlgoData
     BrightnessCalcMethod shadowingMethod = BrightnessCalcMethod::fong;
     
     bool needsUpdate() const { return updateReq; }
-    void resumeUpdates() { updateReq = true; }
+    void resumeUpdates() {
+        updateReq = true;
+        step = 8U;
+    }
     void stopUpdate() { updateReq = false; }
 };
 

@@ -19,13 +19,14 @@ void drawImage(Surface const& image)
 
 unsigned getNewDrawStep(unsigned step)
 {
-    return step > 1 ? step - 1 : step;
+    //return step > 1 ? step / 2 : step;
+    return step / 2;
 }
 
 Surface enlarge(Surface const& img, unsigned k)
 {
-    unsigned width = img.getWidth() * k;
-    unsigned height = img.getHeight() * k;
+    unsigned width = unsigned(img.getWidth()) * k;
+    unsigned height = unsigned(img.getHeight()) * k;
     Surface result(width, height, false);
     auto imgIter = img.getIter();
     auto resIter = result.getIter();
