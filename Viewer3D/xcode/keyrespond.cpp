@@ -56,12 +56,26 @@ void processLightRegulation(DrawAlgoData& data, int keyCode)
         decreaseLight(data.stage);
 }
 
+void processShadowingRegulation(DrawAlgoData& data, int keyCode)
+{
+    switch (keyCode) {
+        case KeyEvent::KEY_1:
+            data.shadowingMethod = BrightnessCalcMethod::rsm;
+            break;
+        case KeyEvent::KEY_2:
+            data.shadowingMethod = BrightnessCalcMethod::tracing;
+            break;
+        case KeyEvent::KEY_3:
+            data.shadowingMethod = BrightnessCalcMethod::fong;
+            break;
+    }
+}
+
 void respondToKey(DrawAlgoData& data, int keyCode)
 {
     processRotations(data, keyCode);
     processTranslations(data, keyCode);
     processLightRegulation(data, keyCode);
+    processShadowingRegulation(data, keyCode);
     data.resumeUpdates();
-    debug << "respondToKey finished: " << keyCode << '\n';
-    debug << "light: " << data.stage.sources[0].color << '\n';
 }
