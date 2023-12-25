@@ -30,6 +30,7 @@ struct Collision
     float reflection() const { return objProp.reflection; }
     float transmission() const { return objProp.transmission; }
     float diffuse() const { return objProp.diffuseRefl; }
+    float shineRatio() const { return objProp.shineRatio; }
 };
 
 // used only when observing in z axis direction

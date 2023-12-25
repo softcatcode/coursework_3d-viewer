@@ -112,9 +112,6 @@ Surface trace(RayTracer& tracer, unsigned step)
     unsigned i = 0, j = 0;
     while (iter.line()) {
         while (iter.pixel()) {
-//            if (i == 336 && j == 415) {
-//                int debug_point = 0;
-//            }
             Color color = trace(tracer, i, j);
             //cout << i << ' ' << j << ' ' << color << endl;
             iter.r() = (unsigned char) color.r;

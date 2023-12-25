@@ -16,5 +16,6 @@ using namespace cinder;
 const Color backgroundColor = Color(100.f, 100.f, 250.f);
 const Color backgroundLight = Color(60.f, 60.f, 60.f);
 const float spaceOptDensity = 1.f;
+const float defaultShineRatio = 1.f;
 
 #endif /* parameters_hpp */
