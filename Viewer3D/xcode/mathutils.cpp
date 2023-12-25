@@ -106,3 +106,11 @@ Color min(Color const& first, Color const& second)
     float b = min(first.b, second.b);
     return Color(r, g, b);
 }
+
+Color max(Color const& first, Color const& second)
+{
+    float r = max(first.r, second.r);
+    float g = max(first.g, second.g);
+    float b = max(first.b, second.b);
+    return Color(r, g, b);
+}

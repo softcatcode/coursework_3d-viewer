@@ -50,3 +50,13 @@ void moveLeft(Stage& stage)
 {
     translateCamera(stage.camera, vec3(-30.f, 0.f, 0.f));
 }
+
+void increaseLight(Stage& stage)
+{
+    modifyLight(stage.sources, 100.f);
+}
+
+void decreaseLight(Stage& stage)
+{
+    modifyLight(stage.sources, -100.f);
+}

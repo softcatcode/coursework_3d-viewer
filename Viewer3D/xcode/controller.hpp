@@ -26,4 +26,8 @@ void moveRight(Stage& stage);
 
 void moveLeft(Stage& stage);
 
+void increaseLight(Stage& stage);
+
+void decreaseLight(Stage& stage);
+
 #endif /* controller_hpp */

@@ -59,4 +59,6 @@ void buildPlanesForTriangles(
     vector<vec3> const& points
 );
 
+void modifyLight(vector<LightSource>& sources, float value);
+
 #endif /* stageobj_hpp */
