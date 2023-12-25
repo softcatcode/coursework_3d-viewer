@@ -40,5 +40,5 @@ void respondToKey(DrawAlgoData& data, int keyCode)
             moveLeft(data.stage);
             break;
     }
-    data.needsUpdate = true;
+    data.stopUpdate();
 }

@@ -7,6 +7,7 @@
 
 #include "parameters.hpp"
 #include "beamsegment.hpp"
+#include "mathutils.hpp"
 #include <vector>
 #include <algorithm>
 #include <memory>
@@ -88,49 +89,20 @@ unique_ptr< pair<Collision, unsigned> > findNextCollision(
     return result;
 }
 
-BeamSegment getReflectedSegment(BeamSegment const& beamSeg, Collision const& collision) {
-    vec3 dir = reflectionDir(beamSeg.ray.getDirection(), collision.n);
-    vec3 point = collision.point() + (0.1f * dir);
-    float power = beamSeg.power * collision.brightness;
-    Color color;
-    if (beamSeg.collisionCount > 0)
-        color = colorAfterCollision(beamSeg.color, collision.color(), power);
-    else
-        color = collision.color() * power;
-    power *= collision.reflection();
-    return { Ray(point, dir), color, power, beamSeg.collisionCount + 1 };
-}
-
-BeamSegment getTransmittedSegment(
-    BeamSegment const& beamSeg,
-    Collision const& collision,
-    Object const& object
+Ray transmittedRay(
+    Ray const& ray,
+    Object const& object,
+    vec3 const& point,
+    vec3 const& n,
+    float optDensity
 ) {
-    float materialOptDensity = collision.optDensity();
-    vec3 dir = afterTransitionDir(
-        beamSeg.ray.getDirection(), collision.n, spaceOptDensity, materialOptDensity
-    );
-    Ray ray(collision.point() + (0.01f * dir), dir);
-    float power = beamSeg.power * collision.brightness;
-    Color color;
-    if (beamSeg.collisionCount > 0)
-        color = colorAfterCollision(beamSeg.color, collision.color(), power);
-    else
-        color = collision.color() * power;
-    power *= collision.transmission();
-    
-    auto nextCol = rayObjectCollision(ray, object);
-    BeamSegment result;
+    vec3 dir = afterTransitionDir(ray.getDirection(), n, spaceOptDensity, optDensity);
+    Ray result(point + 0.01f * dir, dir);
+    auto nextCol = rayObjectCollision(result, object);
     if (nextCol)
     {
-        vec3 finalDir = afterTransitionDir(
-            ray.getDirection(), nextCol->n, materialOptDensity, spaceOptDensity
-        );
-        Color finalColor = colorAfterCollision(color, nextCol->color(), power);
-        Ray finalRay(nextCol->point() + (0.1f * finalDir), finalDir);
-        result = { finalRay, finalColor, power, beamSeg.collisionCount + 1 };
+        vec3 finalDir = afterTransitionDir(result.getDirection(), nextCol->n, optDensity, spaceOptDensity);
+        result = { nextCol->point() + 0.01f * finalDir, finalDir };
     }
-    else
-        result = { ray, color, power, beamSeg.collisionCount + 1 };
     return result;
 }

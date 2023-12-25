@@ -22,10 +22,9 @@ struct Collision
     union {
         float dist, z;
     };
-    float delta = 0.f;
     Color color = backgroundColor;
+    float delta = 0.f;
     
-    Color color() const { return objProp.color; }
     vec3 point() const { return vec3(x, y, dist); }
     float optDensity() const { return objProp.optDensity; }
     float reflection() const { return objProp.reflection; }

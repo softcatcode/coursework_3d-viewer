@@ -24,12 +24,13 @@ void execute(DrawAlgoData& data, int request)
                 data.stage,
                 data.imgWidth,
                 data.imgHeight,
-                BrightnessCalcMethod::tracing
+                data.shadowingMethod
             );
             break;
         case TRACE_RAYS:
             data.image = trace(data.tracer, data.step);
-            data.needsUpdate = false;
+            if (data.step == 1)
+                data.stopUpdate();
             break;
         case DRAW_GENERATED_IMG:
             drawImage(data.image);

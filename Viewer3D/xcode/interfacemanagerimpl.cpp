@@ -15,7 +15,7 @@ void setupRequest(Viewer3DApp const& app)
 
 void updateRequest(Viewer3DApp const& app)
 {
-    if (!needsUpdate(app.data))
+    if (!app.data.needsUpdate())
         return;
     execute(app.data, INIT_TRACER);
     execute(app.data, TRACE_RAYS);

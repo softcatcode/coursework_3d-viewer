@@ -84,7 +84,7 @@ void rotateCamera(Observer& camera, char axis, float angle)
         camera.x = camera.x * m;
         camera.z = camera.z * m;
     } else if (axis == 'z') {
-        mat3 m = rotate(unit, camera.z);
+        mat3 m = rotate(angle, camera.z);
         camera.x = camera.x * m;
         camera.y = camera.y * m;
     }
@@ -102,9 +102,4 @@ mat3 Object::trianglePoints(size_t i) const
 {
     Triangle const& tr = triangles[i];
     return mat3(points[tr.a], points[tr.b], points[tr.c]);
-}
-
-vec3 Object::triangleNorm(size_t i) const
-{
-    return triangles[i].n;
 }

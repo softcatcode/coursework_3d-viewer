@@ -38,7 +38,6 @@
 		35C4156E2B0FE1A800D45B0D /* interfacemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C4156C2B0FE1A800D45B0D /* interfacemanager.cpp */; };
 		35C415752B0FFC1B00D45B0D /* operationmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C415732B0FFC1B00D45B0D /* operationmanager.cpp */; };
 		35C415782B0FFDDC00D45B0D /* interfacemanagerimpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C415762B0FFDDC00D45B0D /* interfacemanagerimpl.cpp */; };
-		35C4157E2B108AD400D45B0D /* drawalgodata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C4157C2B108AD400D45B0D /* drawalgodata.cpp */; };
 		35C415812B10906000D45B0D /* rsmelem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C4157F2B10906000D45B0D /* rsmelem.cpp */; };
 		35C415872B11BB8F00D45B0D /* beam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C415852B11BB8F00D45B0D /* beam.cpp */; };
 		35C4158A2B12091200D45B0D /* objproperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35C415882B12091200D45B0D /* objproperties.cpp */; };
@@ -153,7 +152,6 @@
 		35C415742B0FFC1B00D45B0D /* operationmanager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = operationmanager.hpp; sourceTree = "<group>"; };
 		35C415762B0FFDDC00D45B0D /* interfacemanagerimpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interfacemanagerimpl.cpp; sourceTree = "<group>"; };
 		35C415772B0FFDDC00D45B0D /* interfacemanagerimpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = interfacemanagerimpl.hpp; sourceTree = "<group>"; };
-		35C4157C2B108AD400D45B0D /* drawalgodata.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drawalgodata.cpp; sourceTree = "<group>"; };
 		35C4157D2B108AD400D45B0D /* drawalgodata.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = drawalgodata.hpp; sourceTree = "<group>"; };
 		35C4157F2B10906000D45B0D /* rsmelem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rsmelem.cpp; sourceTree = "<group>"; };
 		35C415802B10906000D45B0D /* rsmelem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rsmelem.hpp; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				35C4156C2B0FE1A800D45B0D /* interfacemanager.cpp */,
 				35C415732B0FFC1B00D45B0D /* operationmanager.cpp */,
 				35C415762B0FFDDC00D45B0D /* interfacemanagerimpl.cpp */,
-				35C4157C2B108AD400D45B0D /* drawalgodata.cpp */,
 				35C4157F2B10906000D45B0D /* rsmelem.cpp */,
 				35C415852B11BB8F00D45B0D /* beam.cpp */,
 				35C415882B12091200D45B0D /* objproperties.cpp */,
@@ -714,7 +711,6 @@
 				CFFBE539EF5D455C8A374CE1 /* b2EdgeAndPolygonContact.cpp in Sources */,
 				35C4156E2B0FE1A800D45B0D /* interfacemanager.cpp in Sources */,
 				35C415812B10906000D45B0D /* rsmelem.cpp in Sources */,
-				35C4157E2B108AD400D45B0D /* drawalgodata.cpp in Sources */,
 				A5C9483C467749668437164C /* b2PolygonAndCircleContact.cpp in Sources */,
 				C02CAD4684D14624929AF7BF /* b2PolygonContact.cpp in Sources */,
 				1C4DB07B16334322B93EB667 /* b2DistanceJoint.cpp in Sources */,

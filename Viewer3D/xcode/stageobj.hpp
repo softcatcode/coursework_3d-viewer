@@ -21,14 +21,15 @@ struct Object
     ObjectProperties properties;
     
     mat3 trianglePoints(size_t i) const;
-    vec3 triangleNorm(size_t i) const;
+    vec3 triangleNorm(size_t i) const { return triangles[i].n; };
+    Color getColor() const { return properties.color; }
 };
 
 struct Observer
 {
     vec3 location, x, y, z;
     
-    vec3 getLocation { return location; }
+    vec3 getLocation() const { return location; }
 };
 
 struct LightSource

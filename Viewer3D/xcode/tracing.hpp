@@ -19,7 +19,7 @@ Color traceBeam(
     Beam& beam,
     vector<Object> const& objects,
     vector<Sphere> const& spheres,
-    BrightnessCalcArgs const& brCalcArgs
+    BrightnessCalcArgs& brCalcArgs
 );
 
 #endif /* tracing_hpp */

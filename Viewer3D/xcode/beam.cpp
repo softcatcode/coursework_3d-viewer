@@ -1,5 +1,5 @@
 //
-//  raymanager.cpp
+//  beam.cpp
 //  Viewer3D
 //
 //  Created by Daniil on 25.11.2023.
@@ -11,7 +11,7 @@
 
 void initBeam(Beam& beam, vec3 const& point, vec3 const& direction)
 {
-    beam = { {Ray(point, direction), backgroundColor, 1.f, 0} };
+    beam = { {Ray(point, direction), backgroundColor, 0} };
 }
 
 Color getColor(Beam const& beam)
@@ -26,7 +26,7 @@ Color getColor(Beam const& beam)
     }
     Color result;
     if (count > 0)
-        result = color / powerSum;
+        result = color / count;
     else
         result = backgroundColor;
     return result;

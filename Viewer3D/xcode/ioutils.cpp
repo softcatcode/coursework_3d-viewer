@@ -181,7 +181,7 @@ void readStage(Stage& stage, string const& fileName)
     stage.objects.push_back(obj);
     
     stage.camera = { vec3(220, -100, -100), vec3(0, 1, 0), vec3(0, 0, 1), vec3(-1, 0, 0) };
-    stage.sources = { { vec3(215, 505, 205), vec3(-1, 0, 0), vec3(0, -1, 1), vec3(0, -1, -1), 800.f } };
+    stage.sources = { { vec3(215, 505, 205), vec3(-1, 0, 0), vec3(0, -1, 1), vec3(0, -1, -1), Color(200.f, 200.f, 200.f) } };
     stage.sources[0].y = normalize(stage.sources[0].y);
     stage.sources[0].z = normalize(stage.sources[0].z);
 }

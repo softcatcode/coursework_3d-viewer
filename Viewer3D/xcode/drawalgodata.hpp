@@ -10,6 +10,7 @@
 
 #include "stage.hpp"
 #include "raytracer.hpp"
+#include "brightness.hpp"
 using namespace cinder;
 
 struct DrawAlgoData
@@ -18,9 +19,12 @@ struct DrawAlgoData
     RayTracer tracer;
     unsigned imgWidth, imgHeight, step;
     Surface image;
-    bool needsUpdate = true;
+    bool updateReq = true;
+    BrightnessCalcMethod shadowingMethod = BrightnessCalcMethod::fong;
+    
+    bool needsUpdate() const { return updateReq; }
+    void resumeUpdates() { updateReq = true; }
+    void stopUpdate() { updateReq = false; }
 };
-
-bool needsUpdate(DrawAlgoData const& data);
 
 #endif /* drawalgodata_hpp */
