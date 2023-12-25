@@ -1424,8 +1424,8 @@
             filePath = "brightness.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "fongBrightness(collision, sources, objects, spheres, cameraLocation, rayDir)"
             landmarkType = "9">
             <Locations>

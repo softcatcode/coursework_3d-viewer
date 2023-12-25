@@ -60,8 +60,9 @@ Color rsmBrightness(
     Color result(0.f, 0.f, 0.f);
     size_t n = shadowMaps.size();
     vec3 point = collision.point();
+    float diffuseRatio = collision.diffuse();
     for (size_t i = 0; i < n; ++i) {
-        result += directBrightness(point, shadowMaps[i], transformers[i]);
+        result += directBrightness(point, shadowMaps[i], transformers[i]) * diffuseRatio;
         auto mapSize = sizeOf(shadowMaps[i]);
         for (unsigned j = 0; j < SAMPLE_SIZE; ++j) {
             ivec2 position = getRandomElemPosition(mapSize);
@@ -82,7 +83,7 @@ Color sourceLight(
     vec3 srcVec = source.location - point;
     vec3 srcDir = normalize(srcVec);
     float srcDist = length(srcVec);
-    BeamSegment beam = { Ray(point + 0.1f * srcDir, srcDir), source.color, 0 };
+    BeamSegment beam = { Ray(point + 0.01f * srcDir, srcDir), source.color, 0 };
     bool nextCollisionExists = true;
     while (nextCollisionExists) {
         unique_ptr< pair<Collision, unsigned> > searchResPtr = findNextCollision(beam, objects, spheres);
@@ -90,7 +91,7 @@ Color sourceLight(
             float collisionDist = searchResPtr->first.dist;
             passedDist += collisionDist;
             if (passedDist < srcDist) {
-                beam.ray.setOrigin(beam.ray.calcPosition(collisionDist + 0.1f));
+                beam.ray.setOrigin(beam.ray.calcPosition(collisionDist + 0.01f));
                 k *= searchResPtr->first.transmission();
             } else
                 nextCollisionExists = false;
@@ -109,8 +110,9 @@ Color traceBrightness(
 ) {
     vec3 point = collision.point();
     Color result(0.f, 0.f, 0.f);
+    float difRatio = collision.diffuse();
     for (auto const& src: sources)
-        result += sourceLight(src, point, objects, spheres);
+        result += sourceLight(src, point, objects, spheres) * difRatio;
     return result;
 }
 
