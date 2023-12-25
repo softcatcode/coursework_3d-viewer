@@ -29,6 +29,6 @@ void sortRSMElemData(ReflectiveShadowMapElem& rsmElem);
 
 void deleteDuplicates(ReflectiveShadowMapElem& rsmElem);
 
-void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, Color power);
+void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, Color const& light);
 
 #endif /* rsmelem_hpp */

@@ -17,10 +17,11 @@ void initBeam(Beam& beam, vec3 const& point, vec3 const& direction)
 Color getColor(Beam const& beam)
 {
     Color color(0.f, 0.f, 0.f);
+    Color white(255.f, 255.f, 255.f);
     unsigned count = 0U;
     for (auto const& seg: beam) {
         if (seg.collisionCount > 0) {
-            color += seg.color;
+            color += min(seg.color, white);
             ++count;
         }
     }

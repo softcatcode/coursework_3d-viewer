@@ -40,10 +40,10 @@ void initRayTracer(
     tracer.imgHeight = imgHeight;
     tracer.method = method;
     if (method == BrightnessCalcMethod::rsm) {
+        tracer.transformers = getSourceTransformers(stage.sources);
         tracer.sourceMaps = buildShadowMaps(
             tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
         );
-        tracer.transformers = getSourceTransformers(stage.sources);
     } else if (
         method == BrightnessCalcMethod::tracing ||
         method == BrightnessCalcMethod::fong
@@ -112,11 +112,11 @@ Surface trace(RayTracer& tracer, unsigned step)
     unsigned i = 0, j = 0;
     while (iter.line()) {
         while (iter.pixel()) {
-            if (i == 346 && j == 443) {
-                int debug_point = 0;
-            }
+//            if (i == 336 && j == 415) {
+//                int debug_point = 0;
+//            }
             Color color = trace(tracer, i, j);
-            cout << i << ' ' << j << ' ' << color << endl;
+            //cout << i << ' ' << j << ' ' << color << endl;
             iter.r() = (unsigned char) color.r;
             iter.g() = (unsigned char) color.g;
             iter.b() = (unsigned char) color.b;

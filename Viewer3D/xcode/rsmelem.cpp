@@ -45,13 +45,12 @@ void deleteDuplicates(ReflectiveShadowMapElem& rsmElem)
     }
 }
 
-void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, Color light)
+void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, Color const& light)
 {
     Color color = light;
     size_t n = elem.size();
     for (size_t i = 0; i < n; ++i) {
-        float z = elem[i].dist;
-        elem[i].color = color / (z + EPS);
+        elem[i].color = color;
         color *= elem[i].transmission();
     }
 }
