@@ -33,22 +33,22 @@ void rotateLeft(Stage& stage)
 
 void moveForward(Stage& stage)
 {
-    translateCamera(stage.camera, vec3(0.f, 0.f, 30.f));
+    translateCamera(stage.camera, vec3(0.f, 0.f, 100.f));
 }
 
 void moveBack(Stage& stage)
 {
-    translateCamera(stage.camera, vec3(0.f, 0.f, -30.f));
+    translateCamera(stage.camera, vec3(0.f, 0.f, -100.f));
 }
 
 void moveRight(Stage& stage)
 {
-    translateCamera(stage.camera, vec3(30.f, 0.f, 0.f));
+    translateCamera(stage.camera, vec3(100.f, 0.f, 0.f));
 }
 
 void moveLeft(Stage& stage)
 {
-    translateCamera(stage.camera, vec3(-30.f, 0.f, 0.f));
+    translateCamera(stage.camera, vec3(-100.f, 0.f, 0.f));
 }
 
 void increaseLight(Stage& stage)

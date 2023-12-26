@@ -19,6 +19,7 @@ struct RayTracer
 {
     // common fields
     vector< vector<Beam> > data;
+    vector< vector<Color> > ready;
     vector<Object> objects;
     vector<Sphere> spheres;
     unsigned imgWidth, imgHeight;

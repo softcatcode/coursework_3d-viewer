@@ -20,4 +20,6 @@ void initBeam(Beam& beam, vec3 const& point, vec3 const& direction);
 
 Color getColor(Beam const& beam);
 
+bool needsTracing(Beam const& beam);
+
 #endif /* beam_hpp */

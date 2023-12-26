@@ -39,6 +39,7 @@ void initRayTracer(
     tracer.imgWidth = imgWidth;
     tracer.imgHeight = imgHeight;
     tracer.method = method;
+    resize(tracer.ready, imgHeight, imgWidth);
     if (method == BrightnessCalcMethod::rsm) {
         tracer.transformers = getSourceTransformers(stage.sources);
         tracer.sourceMaps = buildShadowMaps(
@@ -99,8 +100,13 @@ BrightnessCalcArgs getBrightnessCalcArgsStruct(RayTracer& tracer)
 
 Color trace(RayTracer& tracer, unsigned i, unsigned j)
 {
-    BrightnessCalcArgs&& args = getBrightnessCalcArgsStruct(tracer);
-    return traceBeam(tracer.data[i][j], tracer.objects, tracer.spheres, args);
+    if (needsTracing(tracer.data[i][j])) {
+        BrightnessCalcArgs&& args = getBrightnessCalcArgsStruct(tracer);
+        tracer.ready[i][j] = traceBeam(
+            tracer.data[i][j], tracer.objects, tracer.spheres, args
+        );
+    }
+    return tracer.ready[i][j];
 }
 
 Surface trace(RayTracer& tracer, unsigned step)

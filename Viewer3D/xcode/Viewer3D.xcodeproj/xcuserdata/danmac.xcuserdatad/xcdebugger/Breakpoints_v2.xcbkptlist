@@ -886,8 +886,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "trace(tracer, step)"
             landmarkType = "9">
             <Locations>
@@ -1283,8 +1283,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "trace(tracer, step)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1315,8 +1315,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "trace(tracer, step)"
             landmarkType = "9">
             <Locations>
@@ -1393,6 +1393,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"
                   endingLineNumber = "115"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "CA1E277F-3ACC-4838-89C2-E27BDD24C6BC - 19d1d1b982e1a5ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
                   offsetFromSymbolStart = "300">
                </Location>
             </Locations>
@@ -1488,8 +1503,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "initRayTracer(tracer, stage, imgWidth, imgHeight, method)"
             landmarkType = "9">
          </BreakpointContent>

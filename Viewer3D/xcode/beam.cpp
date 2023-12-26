@@ -32,3 +32,8 @@ Color getColor(Beam const& beam)
         result = backgroundColor;
     return result;
 }
+
+bool needsTracing(Beam const& beam)
+{
+    return beam[0].collisionCount == 0;
+}
