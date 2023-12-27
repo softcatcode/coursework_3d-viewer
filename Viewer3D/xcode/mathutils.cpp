@@ -56,8 +56,8 @@ Line2d buildLine(float x1, float y1, float x2, float y2)
 int crossPixel(Line2d const& line, int i)
 {
     if (line.vertical)
-        return line.location;
-    return (float(i) - line.b) / line.k;
+        return int(line.location);
+    return int((float(i) - line.b) / line.k);
 }
 
 vec3 reflectionDir(vec3 const& r, vec3 const& n)
@@ -70,7 +70,7 @@ vec3 reflectionDir(vec3 const& r, vec3 const& n)
 vec3 afterTransitionDir(vec3 const& r, vec3 const& n, float k1, float k2)
 {
     vec3 x = normalize(cross(n, cross(r, n)));
-    float sinA = dot(r, x);
+    float sinA = dot(r, x); // (\vec{r};vec{R})
     float sinB = k1 / k2 * sinA;
     float cosB = sqrt(1 - sinB * sinB);
     return sinB * x - cosB * n;
@@ -97,4 +97,20 @@ void Triangle::setPlane(vec4 const& ratios)
     plane.b = ratios[1];
     plane.c = ratios[2];
     plane.d = ratios[3];
+}
+
+Color min(Color const& first, Color const& second)
+{
+    float r = min(first.r, second.r);
+    float g = min(first.g, second.g);
+    float b = min(first.b, second.b);
+    return Color(r, g, b);
+}
+
+Color max(Color const& first, Color const& second)
+{
+    float r = max(first.r, second.r);
+    float g = max(first.g, second.g);
+    float b = max(first.b, second.b);
+    return Color(r, g, b);
 }

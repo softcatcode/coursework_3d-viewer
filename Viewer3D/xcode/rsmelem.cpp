@@ -23,7 +23,7 @@ void updateShadowMapElem(
 ) {
     float dist = triangle.depthOf(x, y);
     if (dist > 0.f) {
-        Collision collision = { triangle.n, objProp, x, y, dist, -1.f, getDepthDelta(triangle.n) };
+        Collision collision = { triangle.n, objProp, x, y, dist, backgroundColor, getDepthDelta(triangle.n) };
         rsmElem.push_back(collision);
     }
 }
@@ -45,13 +45,12 @@ void deleteDuplicates(ReflectiveShadowMapElem& rsmElem)
     }
 }
 
-void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, float power)
+void calcBrightnessForRSMElem(ReflectiveShadowMapElem& elem, Color const& light)
 {
-    float brightness = power;
+    Color color = light;
     size_t n = elem.size();
     for (size_t i = 0; i < n; ++i) {
-        float z = elem[i].dist;
-        elem[i].brightness = brightness / (z + EPS);
-        brightness *= elem[i].transmission();
+        elem[i].color = color;
+        color *= elem[i].transmission();
     }
 }

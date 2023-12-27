@@ -72,4 +72,8 @@ vec3 afterTransitionDir(vec3 const& r, vec3 const& n, float k1, float k2);
 
 Color colorAfterCollision(Color rayClor, Color surfaceColor, float power);
 
+Color min(Color const&, Color const&);
+
+Color max(Color const&, Color const&);
+
 #endif /* mathutils_hpp */

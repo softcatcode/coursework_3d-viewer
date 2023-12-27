@@ -9,24 +9,17 @@
 #define tracing_hpp
 
 #include <vector>
+#include "brightness.hpp"
 #include "shadowmap.hpp"
 #include "mathutils.hpp"
 #include "beam.hpp"
 using namespace std;
 
-Color traceRay(
+Color traceBeam(
     Beam& beam,
     vector<Object> const& objects,
     vector<Sphere> const& spheres,
-    vector<ReflectiveShadowMap> const& shadowMaps,
-    vector<Transformer> const& transformers
-);
-
-Color traceRay(
-    Beam& beam,
-    vector<Object> const& objects,
-    vector<Sphere> const& spheres,
-    vector<LightSource> const& sources
+    BrightnessCalcArgs& brCalcArgs
 );
 
 #endif /* tracing_hpp */

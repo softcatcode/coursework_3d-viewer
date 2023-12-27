@@ -23,7 +23,8 @@ void execute(DrawAlgoData& data, int request)
                 data.tracer,
                 data.stage,
                 data.imgWidth,
-                data.imgHeight
+                data.imgHeight,
+                data.shadowingMethod
             );
             break;
         case TRACE_RAYS:
@@ -37,6 +38,8 @@ void execute(DrawAlgoData& data, int request)
             break;
         case UPDATE_STEP:
             data.step = getNewDrawStep(data.step);
+            if (data.step == 0U)
+                data.stopUpdate();
             break;
     }
 }

@@ -56,7 +56,7 @@ void updateShadowMapByTriangle(
     Line2d a = buildLine(p1.x, p1.y, p3.x, p3.y);
     Line2d b = buildLine(p1.x, p1.y, p2.x, p2.y);
     Line2d c = buildLine(p2.x, p2.y, p3.x, p3.y);
-    int y1 = p1.y, y2 = p2.y, y3 = p3.y;
+    int y1 = int(p1.y), y2 = int(p2.y), y3 = int(p3.y);
     updateRSMSubtask(shadowMap, a, b, y1, y2, tr, objProp);
     updateRSMSubtask(shadowMap, a, c, y2 + 1, y3, tr, objProp);
 }
@@ -87,7 +87,7 @@ vector<ReflectiveShadowMap> buildShadowMaps(
             for (size_t j = 0; j < w; ++j) {
                 sortRSMElemData(map[i][j]);
                 deleteDuplicates(map[i][j]);
-                calcBrightnessForRSMElem(map[i][j], sources[k].power);
+                calcBrightnessForRSMElem(map[i][j], sources[k].color);
             }
         }
     }

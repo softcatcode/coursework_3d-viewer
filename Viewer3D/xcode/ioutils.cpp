@@ -168,18 +168,20 @@ Object createCube()
 void readStage(Stage& stage, string const& fileName)
 {
     Object obj = createCube();
-//    mat4 m1 = scale(vec3(3, 3, 3));
-//    mat4 m2 = translate(vec3(20, 20, 20));
-//    for (auto& point: obj.points) {
-//        vec4 coords(point, 1);
-//        coords = (m2 * m1) * coords;
-//        point.x = coords.x;
-//        point.y = coords.y;
-//        point.z = coords.z;
-//    }
     stage.objects = { obj };
+    mat4 trMatr = translate(vec3(-20, 215, 20));
+    for (auto& point: obj.points) {
+        vec4 coords(point, 1);
+        coords = trMatr * coords;
+        point.x = coords.x;
+        point.y = coords.y;
+        point.z = coords.z;
+    }
+    buildPlanesForTriangles(obj.triangles, obj.points);
+    stage.objects.push_back(obj);
+    
     stage.camera = { vec3(220, -100, -100), vec3(0, 1, 0), vec3(0, 0, 1), vec3(-1, 0, 0) };
-    stage.sources = { { vec3(215, 505, 205), vec3(-1, 0, 0), vec3(0, -1, 1), vec3(0, -1, -1), 800.f } };
+    stage.sources = { { vec3(215, 505, 205), vec3(-1, 0, 0), vec3(0, -1, 1), vec3(0, -1, -1), Color(1500.f, 1500.f, 1500.f) } };
     stage.sources[0].y = normalize(stage.sources[0].y);
     stage.sources[0].z = normalize(stage.sources[0].z);
 }

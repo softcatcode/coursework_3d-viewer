@@ -1,5 +1,5 @@
 //
-//  raymanager.cpp
+//  beam.cpp
 //  Viewer3D
 //
 //  Created by Daniil on 25.11.2023.
@@ -11,31 +11,29 @@
 
 void initBeam(Beam& beam, vec3 const& point, vec3 const& direction)
 {
-    beam = { {Ray(point, direction), backgroundColor, 1.f, 0} };
+    beam = { {Ray(point, direction), backgroundColor, 0} };
 }
 
 Color getColor(Beam const& beam)
 {
     Color color(0.f, 0.f, 0.f);
-    bool wereValidRays = false;
-    float powerSum = EPS;
+    Color white(255.f, 255.f, 255.f);
+    unsigned count = 0U;
     for (auto const& seg: beam) {
         if (seg.collisionCount > 0) {
-            color += seg.color * seg.power;
-            powerSum += seg.power;
-            wereValidRays = true;
+            color += min(seg.color, white);
+            ++count;
         }
     }
-    Color result = backgroundColor;
-    if (wereValidRays) {
-//        float maxVal = max(max(color.r, color.g), color.b);
-//        if (maxVal > 0) {
-//            color = (maxVal / min(255.f, maxVal)) * color;
-//            result.r = (unsigned char) color.r;
-//            result.g = (unsigned char) color.g;
-//            result.b = (unsigned char) color.b;
-//        }
-        result = color * (1 / powerSum);
-    }
+    Color result;
+    if (count > 0)
+        result = color / count;
+    else
+        result = backgroundColor;
     return result;
+}
+
+bool needsTracing(Beam const& beam)
+{
+    return beam[0].collisionCount == 0;
 }

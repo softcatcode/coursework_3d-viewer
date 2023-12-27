@@ -10,6 +10,8 @@
 
 using namespace std;
 
+extern ostream& debug;
+
 void log(string const& message);
 
 #endif /* logs_hpp */

@@ -29,17 +29,84 @@ void initTracerBeams(RayTracer& tracer, Observer const& camera, unsigned imgWidt
 void initRayTracer(
     RayTracer& tracer,
     Stage const& stage,
-    unsigned imgWidth, unsigned imgHeight
+    unsigned imgWidth,
+    unsigned imgHeight,
+    BrightnessCalcMethod method
 ) {
-    tracer.transformers = getSourceTransformers(stage.sources);
     tracer.objects = stage.objects;
-    tracer.sourceMaps = buildShadowMaps(
-        tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
-    );
     tracer.spheres = buildSpheres(tracer.objects);
-    tracer.sources = stage.sources;
     initTracerBeams(tracer, stage.camera, imgWidth, imgHeight);
+    tracer.imgWidth = imgWidth;
+    tracer.imgHeight = imgHeight;
+    tracer.method = method;
+    resize(tracer.ready, imgHeight, imgWidth);
+    if (method == BrightnessCalcMethod::rsm) {
+        tracer.transformers = getSourceTransformers(stage.sources);
+        tracer.sourceMaps = buildShadowMaps(
+            tracer.objects, tracer.transformers, stage.sources, imgWidth, imgHeight
+        );
+    } else if (
+        method == BrightnessCalcMethod::tracing ||
+        method == BrightnessCalcMethod::fong
+    ) {
+        tracer.sources = stage.sources;
+        tracer.cameraLocation = stage.camera.getLocation();
+    }
     log("initRayTracer");
+}
+
+BrightnessCalcArgs getBrightnessCalcArgsStruct(RayTracer& tracer)
+{
+    switch (tracer.method) {
+        case BrightnessCalcMethod::rsm:
+            return {
+                tracer.method,
+                {
+                    .methodRSMArgs = {
+                        .collision = {},
+                        .shadowMaps = tracer.sourceMaps,
+                        .transformers = tracer.transformers
+                    }
+                }
+            };
+        case BrightnessCalcMethod::tracing:
+            return {
+                tracer.method,
+                {
+                    .methodTracingArgs = {
+                        .collision = {},
+                        .sources = tracer.sources,
+                        .objects = tracer.objects,
+                        .spheres = tracer.spheres
+                    }
+                }
+            };
+        case BrightnessCalcMethod::fong:
+            return {
+                tracer.method,
+                {
+                    .methodFongArgs = {
+                        .collision = {},
+                        .sources = tracer.sources,
+                        .objects = tracer.objects,
+                        .spheres = tracer.spheres,
+                        .cameraLocation = tracer.cameraLocation,
+                        .rayDir = vec3(0.f, 0.f, 0.f)
+                    }
+                }
+            };
+    }
+}
+
+Color trace(RayTracer& tracer, unsigned i, unsigned j)
+{
+    if (needsTracing(tracer.data[i][j])) {
+        BrightnessCalcArgs&& args = getBrightnessCalcArgsStruct(tracer);
+        tracer.ready[i][j] = traceBeam(
+            tracer.data[i][j], tracer.objects, tracer.spheres, args
+        );
+    }
+    return tracer.ready[i][j];
 }
 
 Surface trace(RayTracer& tracer, unsigned step)
@@ -51,12 +118,8 @@ Surface trace(RayTracer& tracer, unsigned step)
     unsigned i = 0, j = 0;
     while (iter.line()) {
         while (iter.pixel()) {
-            Color color = traceRay(
-                tracer.data[i][j],
-                tracer.objects,
-                tracer.spheres,
-                tracer.sources
-            );
+            Color color = trace(tracer, i, j);
+            //cout << i << ' ' << j << ' ' << color << endl;
             iter.r() = (unsigned char) color.r;
             iter.g() = (unsigned char) color.g;
             iter.b() = (unsigned char) color.b;

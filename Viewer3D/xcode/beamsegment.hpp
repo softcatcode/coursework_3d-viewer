@@ -1,5 +1,5 @@
 //
-//  raysegment.hpp
+//  beamsegment.hpp
 //  Viewer3D
 //
 //  Created by Daniil on 26.11.2023.
@@ -21,7 +21,6 @@ struct BeamSegment
 {
     Ray ray;
     Color color;
-    float power;
     unsigned collisionCount;
 };
 
@@ -49,6 +48,14 @@ BeamSegment getTransmittedSegment(
     BeamSegment const& beamSeg,
     Collision const& collision,
     Object const& object
+);
+
+Ray transmittedRay(
+    Ray const& ray,
+    Object const& object,
+    vec3 const& point,
+    vec3 const& n,
+    float optDensity
 );
 
 #endif /* beamsegment_hpp */

@@ -9,6 +9,7 @@
 #define raytracer_hpp
 
 #include "beam.hpp"
+#include "brightness.hpp"
 #include "stage.hpp"
 #include <vector>
 using namespace std;
@@ -16,19 +17,27 @@ using namespace cinder;
 
 struct RayTracer
 {
+    // common fields
     vector< vector<Beam> > data;
+    vector< vector<Color> > ready;
+    vector<Object> objects;
     vector<Sphere> spheres;
+    unsigned imgWidth, imgHeight;
+    BrightnessCalcMethod method;
+    // for rsm brightness calculation method
     vector<Transformer> transformers;
     vector<ReflectiveShadowMap> sourceMaps;
-    vector<Object> objects;
+    // for tracing brightness calculation method
     vector<LightSource> sources;
-    unsigned imgWidth, imgHeight;
+    vec3 cameraLocation;
 };
 
 void initRayTracer(
     RayTracer& tracer,
     Stage const& stage,
-    unsigned imgWidth, unsigned imgHeight
+    unsigned imgWidth,
+    unsigned imgHeight,
+    BrightnessCalcMethod method
 );
 
 Surface trace(RayTracer& tracer, unsigned step);

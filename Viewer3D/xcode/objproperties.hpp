@@ -10,10 +10,15 @@
 
 using namespace cinder;
 
+#include "parameters.hpp"
+
 struct ObjectProperties
 {
     Color color;
-    float transmission, reflection, diffuseRefl, optDensity;
+    float
+        transmission, reflection, diffuseRefl,
+        optDensity,
+        shineRatio = defaultShineRatio;
 };
 
 #endif /* objproperties_hpp */

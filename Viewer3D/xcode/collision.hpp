@@ -9,6 +9,7 @@
 #define collision_hpp
 
 #include "objproperties.hpp"
+#include "parameters.hpp"
 #include <vector>
 using namespace cinder;
 using namespace std;
@@ -21,14 +22,15 @@ struct Collision
     union {
         float dist, z;
     };
-    float brightness = -1.f, delta = 0.f;
+    Color color = backgroundColor;
+    float delta = 0.f;
     
-    Color color() const { return objProp.color; }
     vec3 point() const { return vec3(x, y, dist); }
     float optDensity() const { return objProp.optDensity; }
     float reflection() const { return objProp.reflection; }
     float transmission() const { return objProp.transmission; }
     float diffuse() const { return objProp.diffuseRefl; }
+    float shineRatio() const { return objProp.shineRatio; }
 };
 
 // used only when observing in z axis direction

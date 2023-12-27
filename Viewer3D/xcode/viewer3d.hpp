@@ -23,7 +23,7 @@ public:
     mutable DrawAlgoData data;
     
     Viewer3DApp(): App() {
-        data.step = 1;
+        data.step = 8;
         data.imgWidth = unsigned(getWindowWidth());
         data.imgHeight = unsigned(getWindowHeight());
         cout << "WxH: " << data.imgWidth << ' ' << data.imgHeight << '\n';
@@ -33,6 +33,7 @@ public:
     void update() override;
     void draw() override;
     void mouseDown(MouseEvent event) override;
+    void keyDown(KeyEvent event) override;
     unsigned getImgWidth() const { return data.imgWidth; }
     unsigned getImgHeigtht() const { return data.imgHeight; }
     unsigned getStep() const { return data.step; }
