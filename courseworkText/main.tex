@@ -1,10 +1,16 @@
-\documentclass[14pt]{report}
+\documentclass[a4paper, 14pt, unknownkeysallowed]{extreport}
 
-\input{packages}
+\input{0-packages}
 
 \begin{document}
-    \input{titlepage}
+    \input{1-titlepage}
+    \setcounter{tocdepth}{1}
     \tableofcontents
-    \input{analytical}
-    \input{construction}
+    \input{2-intro}
+    \input{3-analysis}
+    \input{4-construction}
+    \input{5-technological}
+    \input{6-research}
+    \input{7-conclusion}
+    \input{8-sources}
 \end{document}
