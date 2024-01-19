@@ -13,11 +13,33 @@ ifstream& operator >>(ifstream& in, vec3& v)
     return in;
 }
 
-ifstream& operator >>(ifstream& in, vector<vec3>& vec)
+void print(ostream& out, vec3 const& v)
 {
-    for (auto& elem: vec)
+    out << v.x << ' ' << v.y << ' ' << v.z << '\n';
+}
+
+template <typename Type>
+ifstream& operator >>(ifstream& in, vector<Type>& v)
+{
+    for (Type& elem: v)
         in >> elem;
     return in;
+}
+
+template <>
+ostream& operator <<(ostream& out, vector<vec3> const& v)
+{
+    for (vec3 const& elem: v)
+        print(out, elem);
+    return out;
+}
+
+template <typename Type>
+ostream& operator <<(ostream& out, vector<Type> const& v)
+{
+    for (auto const& elem: v)
+        out << elem << '\n';
+    return out;
 }
 
 ifstream& operator >>(ifstream& in, Triangle& t)
@@ -27,11 +49,11 @@ ifstream& operator >>(ifstream& in, Triangle& t)
     return in;
 }
 
-ifstream& operator >>(ifstream& in, vector<Triangle>& vec)
+ostream& operator <<(ostream& out, Triangle const& t)
 {
-    for (auto& elem: vec)
-        in >> elem;
-    return in;
+    out << t.a << ' ' << t.b << ' ' << t.c << ' ';
+    print(out, t.n);
+    return out;
 }
 
 ifstream& operator >>(ifstream& in, Color& color)
@@ -42,43 +64,72 @@ ifstream& operator >>(ifstream& in, Color& color)
     return in;
 }
 
+void print(ostream& out, Color const& color)
+{
+    out << color.r << ' ' << color.g << ' ' << color.b << '\n';
+}
+
 ifstream& operator >>(ifstream& in, ObjectProperties& prop)
 {
-    in >> prop.color >> prop.transmission >> prop.reflection >> prop.diffuseRefl;
+    in >> prop.color;
+    in >> prop.transmission;
+    in >> prop.reflection >> prop.diffuseRefl;
+    in >> prop.optDensity;
     return in;
+}
+
+ostream& operator <<(ostream& out, ObjectProperties const& prop)
+{
+    print(out, prop.color);
+    out <<
+        prop.transmission << ' ' <<
+        prop.reflection << ' ' <<
+        prop.diffuseRefl << ' ' <<
+        prop.optDensity << '\n';
+    return out;
 }
 
 ifstream& operator >>(ifstream& in, Object& obj)
 {
-    unsigned pointCount, triangleCount;
-    in >> pointCount >> triangleCount;
+    unsigned pointCount;
+    in >> pointCount;
     obj.points.resize(pointCount);
-    obj.triangles.resize(triangleCount);
     in >> obj.points;
+    
+    unsigned triangleCount;
+    in >> triangleCount;
+    obj.triangles.resize(triangleCount);
     in >> obj.triangles;
-    in >> obj.properties;
+    
     buildPlanesForTriangles(obj.triangles, obj.points);
+    in >> obj.properties;
     return in;
 }
 
-ifstream& operator >>(ifstream& in, vector<Object>& vec)
+ostream& operator <<(ostream& out, Object const& obj)
 {
-    for (auto& elem: vec)
-        in >> elem;
-    return in;
+    out << obj.points.size() << '\n';
+    out << obj.points;
+    out << obj.triangles.size() << '\n';
+    out << obj.triangles;
+    out << obj.properties << '\n';
+    return out;
 }
 
 ifstream& operator >>(ifstream& in, LightSource& src)
 {
-    in >> src.location >> src.x >> src.y >> src.z;
+    in >> src.location >> src.x >> src.y >> src.z >> src.color;
     return in;
 }
 
-ifstream& operator >>(ifstream& in, vector<LightSource>& vec)
+ostream& operator <<(ostream& out, LightSource const& src)
 {
-    for (auto& elem: vec)
-        in >> elem;
-    return in;
+    print(out, src.location);
+    print(out, src.x);
+    print(out, src.y);
+    print(out, src.z);
+    print(out, src.color);
+    return out;
 }
 
 ifstream& operator >>(ifstream& in, Observer& cam)
@@ -87,12 +138,39 @@ ifstream& operator >>(ifstream& in, Observer& cam)
     return in;
 }
 
+ostream& operator <<(ostream& out, Observer const& cam)
+{
+    print(out, cam.location);
+    print(out, cam.x);
+    print(out, cam.y);
+    print(out, cam.z);
+    return out;
+}
+
 ifstream& operator >>(ifstream& in, Stage& stage)
 {
+    unsigned objCount;
+    in >> objCount;
+    stage.objects.resize(objCount);
     in >> stage.objects;
+    
+    unsigned srcCount;
+    in >> srcCount;
+    stage.sources.resize(srcCount);
     in >> stage.sources;
+    
     in >> stage.camera;
     return in;
+}
+
+ostream& operator <<(ostream& out, Stage const& stage)
+{
+    out << stage.objects.size() << '\n';
+    out << stage.objects;
+    out << stage.sources.size() << '\n';
+    out << stage.sources;
+    out << stage.camera << '\n';
+    return out;
 }
 
 Object readSphere()
@@ -167,21 +245,7 @@ Object createCube()
 
 void readStage(Stage& stage, string const& fileName)
 {
-    Object obj = createCube();
-    stage.objects = { obj };
-    mat4 trMatr = translate(vec3(-20, 215, 20));
-    for (auto& point: obj.points) {
-        vec4 coords(point, 1);
-        coords = trMatr * coords;
-        point.x = coords.x;
-        point.y = coords.y;
-        point.z = coords.z;
-    }
-    buildPlanesForTriangles(obj.triangles, obj.points);
-    stage.objects.push_back(obj);
-    
-    stage.camera = { vec3(220, -100, -100), vec3(0, 1, 0), vec3(0, 0, 1), vec3(-1, 0, 0) };
-    stage.sources = { { vec3(215, 505, 205), vec3(-1, 0, 0), vec3(0, -1, 1), vec3(0, -1, -1), Color(1500.f, 1500.f, 1500.f) } };
-    stage.sources[0].y = normalize(stage.sources[0].y);
-    stage.sources[0].z = normalize(stage.sources[0].z);
+    ifstream in("/Users/danmac/3d-viewer/stages/" + fileName);
+    in >> stage;
+    in.close();
 }

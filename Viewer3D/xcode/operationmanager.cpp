@@ -16,7 +16,7 @@ void execute(DrawAlgoData& data, int request)
     switch (request)
     {
         case READ_STAGE:
-            readStage(data.stage, "stageData.txt");
+            readStage(data.stage, "4");
             break;
         case INIT_TRACER:
             initRayTracer(
