@@ -20,7 +20,7 @@ float colorPower(Color const&  color)
 
 bool accuracyNotReached(BeamSegment const& seg)
 {
-    return colorPower(seg.color) > MIN_RAY_POWER && seg.collisionCount < MAX_REFL_COUNT;
+    return seg.collisionCount < MAX_REFL_COUNT;
 }
 
 unique_ptr<Collision> rayObjectCollision(Ray const& ray, Object const& object)
@@ -34,7 +34,9 @@ unique_ptr<Collision> rayObjectCollision(Ray const& ray, Object const& object)
         if (abs(projection) > EPS && ray.calcTriangleIntersection(points[0], points[1], points[2], &dist)) {
             if (dist > 0) {
                 vec3 point = ray.calcPosition(dist);
-                Collision collision = { object.triangleNorm(i), object.properties, point.x, point.y, point.z };
+                Collision collision = {
+                    object.triangleNorm(i), object.properties, point.x, point.y, point.z
+                };
                 collisions.push_back(collision);
             }
         }
@@ -91,18 +93,18 @@ unique_ptr< pair<Collision, unsigned> > findNextCollision(
 
 Ray transmittedRay(
     Ray const& ray,
-    Object const& object,
     vec3 const& point,
     vec3 const& n,
     float optDensity
 ) {
     vec3 dir = afterTransitionDir(ray.getDirection(), n, spaceOptDensity, optDensity);
     Ray result(point + 0.01f * dir, dir);
-    auto nextCol = rayObjectCollision(result, object);
-    if (nextCol)
-    {
-        vec3 finalDir = afterTransitionDir(result.getDirection(), nextCol->n, optDensity, spaceOptDensity);
-        result = { nextCol->point() + 0.01f * finalDir, finalDir };
-    }
+    return result;
+}
+
+Ray reflectedRay(Ray const& ray, vec3 const& point, vec3 const& n)
+{
+    vec3 dir = reflectionDir(ray.getDirection(), n);
+    Ray result(point + 0.01f * dir, dir);
     return result;
 }

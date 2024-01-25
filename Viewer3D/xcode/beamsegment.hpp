@@ -22,6 +22,9 @@ struct BeamSegment
     Ray ray;
     Color color;
     unsigned collisionCount;
+    float nextReflectionWeight = 1;
+    
+    bool valid() { return ray.getDirection() != vec3(0.f, 0.f, 0.f); }
 };
 
 unique_ptr< pair<Collision, unsigned> > findNextCollision(
@@ -52,10 +55,11 @@ BeamSegment getTransmittedSegment(
 
 Ray transmittedRay(
     Ray const& ray,
-    Object const& object,
     vec3 const& point,
     vec3 const& n,
     float optDensity
 );
+
+Ray reflectedRay(Ray const& ray, vec3 const& point, vec3 const& n);
 
 #endif /* beamsegment_hpp */

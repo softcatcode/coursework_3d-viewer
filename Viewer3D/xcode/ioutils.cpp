@@ -72,8 +72,7 @@ void print(ostream& out, Color const& color)
 ifstream& operator >>(ifstream& in, ObjectProperties& prop)
 {
     in >> prop.color;
-    in >> prop.transmission;
-    in >> prop.reflection >> prop.diffuseRefl;
+    in >> prop.transmission >> prop.reflection;
     in >> prop.optDensity;
     return in;
 }
@@ -84,7 +83,6 @@ ostream& operator <<(ostream& out, ObjectProperties const& prop)
     out <<
         prop.transmission << ' ' <<
         prop.reflection << ' ' <<
-        prop.diffuseRefl << ' ' <<
         prop.optDensity << '\n';
     return out;
 }
@@ -176,7 +174,7 @@ ostream& operator <<(ostream& out, Stage const& stage)
 Object readSphere()
 {
     Object obj;
-    int n;
+    unsigned n;
     string path = "/Users/danmac/3d-viewer/Sphere/";
     
     ifstream pointInput(path + "POINTS.txt");
@@ -198,7 +196,7 @@ Object readSphere()
     normInput.close();
     triangleInput.close();
     buildPlanesForTriangles(obj.triangles, obj.points);
-    obj.properties = { cinder::Color(100, 200, 50), 0.2f, 0.5f, 0.3f, 1.5f };
+    obj.properties = { cinder::Color(100, 200, 50), 0.5f, 0.5f, 1.5f };
     return obj;
 }
 
@@ -239,7 +237,7 @@ Object createCube()
     Object obj;
     obj.triangles = triangles;
     obj.points = points;
-    obj.properties = { cinder::Color(100, 200, 50), 0.3f, 0.4f, 0.3f, 1.5f };
+    obj.properties = { cinder::Color(100, 200, 50), 0.3f, 0.4f, 1.5f };
     return obj;
 }
 

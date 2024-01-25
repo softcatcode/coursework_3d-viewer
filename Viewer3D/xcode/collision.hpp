@@ -29,8 +29,8 @@ struct Collision
     float optDensity() const { return objProp.optDensity; }
     float reflection() const { return objProp.reflection; }
     float transmission() const { return objProp.transmission; }
-    float diffuse() const { return objProp.diffuseRefl; }
-    float shineRatio() const { return objProp.shineRatio; }
+    float diffuse() const { return 1.f - objProp.transmission - objProp.reflection; }
+    Color objColor() const { return objProp.color; }
 };
 
 // used only when observing in z axis direction

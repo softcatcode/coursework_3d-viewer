@@ -110,9 +110,9 @@ Color traceBrightness(
 ) {
     vec3 point = collision.point();
     Color result(0.f, 0.f, 0.f);
-    float difRatio = collision.diffuse();
+    float d = collision.diffuse();
     for (auto const& src: sources)
-        result += sourceLight(src, point, objects, spheres) * difRatio;
+        result += sourceLight(src, point, objects, spheres) * d;
     return result;
 }
 
@@ -136,7 +136,7 @@ Color fongBrightness(
         result += d * max(dot(srcDir, n), 0.f) * light;
         float tmp = 2 * dot(n, srcDir) * dot(n, camDir) - dot(srcDir, camDir);
         tmp = max(0.0f, tmp);
-        result += r * pow(tmp, collision.shineRatio()) * light;
+        result += r * pow(tmp, collision.reflection()) * light;
     }
     return result;
 }
