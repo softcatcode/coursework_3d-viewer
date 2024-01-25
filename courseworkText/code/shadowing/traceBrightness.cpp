@@ -6,8 +6,8 @@ Color traceBrightness(
 ) {
     vec3 point = collision.point();
     Color result(0.f, 0.f, 0.f);
-    float difRatio = collision.diffuse();
+    float d = collision.diffuse();
     for (auto const& src: sources)
-        result += sourceLight(src, point, objects, spheres) * difRatio;
+        result += sourceLight(src, point, objects, spheres) * d;
     return result;
 }

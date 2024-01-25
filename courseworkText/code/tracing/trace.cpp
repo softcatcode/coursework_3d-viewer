@@ -33,7 +33,6 @@ Surface trace(RayTracer& tracer, unsigned step)
     while (iter.line()) {
         while (iter.pixel()) {
             Color color = trace(tracer, i, j);
-            //cout << i << ' ' << j << ' ' << color << endl;
             iter.r() = (unsigned char) color.r;
             iter.g() = (unsigned char) color.g;
             iter.b() = (unsigned char) color.b;

@@ -18,7 +18,7 @@ Color fongBrightness(
         result += d * max(dot(srcDir, n), 0.f) * light;
         float tmp = 2 * dot(n, srcDir) * dot(n, camDir) - dot(srcDir, camDir);
         tmp = max(0.0f, tmp);
-        result += r * pow(tmp, collision.shineRatio()) * light;
+        result += r * pow(tmp, collision.reflection()) * light;
     }
     return result;
 }
