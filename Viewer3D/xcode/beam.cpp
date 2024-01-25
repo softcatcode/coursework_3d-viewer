@@ -11,7 +11,7 @@
 
 void initBeam(Beam& beam, vec3 const& point, vec3 const& direction)
 {
-    beam = { {Ray(point, direction), backgroundColor, 0} };
+    beam = { {Ray(point, direction), Color(0.f, 0.f, 0.f), 0} };
 }
 
 Color getColor(Beam const& beam)

@@ -205,8 +205,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "readSphere()"
             landmarkType = "9">
          </BreakpointContent>
@@ -347,8 +347,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "readSphere()"
             landmarkType = "9">
          </BreakpointContent>
@@ -411,8 +411,8 @@
             filePath = "mathutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "Triangle::setPlane(ratios)"
             landmarkType = "7">
          </BreakpointContent>
@@ -824,8 +824,8 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "findNextCollision(beamSeg, objects, spheres)"
             landmarkType = "9">
             <Locations>
@@ -887,8 +887,8 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "findNextCollision(beamSeg, objects, spheres)"
             landmarkType = "9">
             <Locations>
@@ -950,8 +950,8 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "findNextCollision(beamSeg, objects, spheres)"
             landmarkType = "9">
             <Locations>
@@ -998,8 +998,8 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "findNextCollision(beamSeg, objects, spheres)"
             landmarkType = "9">
             <Locations>
@@ -1061,9 +1061,9 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "transmittedRay(ray, object, point, n, optDensity)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "transmittedRay(ray, point, n, optDensity)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1093,9 +1093,9 @@
             filePath = "beamsegment.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "transmittedRay(ray, object, point, n, optDensity)"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "transmittedRay(ray, point, n, optDensity)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1205,8 +1205,8 @@
             filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "trace(tracer, step)"
             landmarkType = "9">
             <Locations>
@@ -1313,8 +1313,8 @@
             filePath = "tracing.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "traceBeam(beam, objects, spheres, brCalcArgs)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1425,8 +1425,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "readStage(stage, fileName)"
             landmarkType = "9">
             <Locations>
@@ -1473,8 +1473,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "readStage(stage, fileName)"
             landmarkType = "9">
             <Locations>
@@ -1521,8 +1521,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "operator &gt;&gt;(in, stage)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1537,8 +1537,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "operator &gt;&gt;(in, stage)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1553,8 +1553,8 @@
             filePath = "ioutils.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "operator &gt;&gt;(in, stage)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1656,38 +1656,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "808DEF86-A1C8-492F-8683-124CCA3B5FA2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "interfacemanagerimpl.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "updateRequest(app)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CD2861FB-D9F4-4B1A-8CE5-5B461EF75237"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "interfacemanagerimpl.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "updateRequest(app)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "87D60EDB-8DB5-42C8-8D7A-ABC82EEEA54D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1695,8 +1663,8 @@
             filePath = "interfacemanagerimpl.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "updateRequest(app)"
             landmarkType = "9">
          </BreakpointContent>
@@ -1704,49 +1672,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1547DBE1-0E9A-4264-ADD4-E4CFB021C2D4"
+            uuid = "5A381869-7445-4567-B2CC-59D09CB8CD26"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "interfacemanagerimpl.cpp"
+            filePath = "raytracer.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "updateRequest(app)"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "trace(tracer, step)"
             landmarkType = "9">
             <Locations>
                <Location
-                  uuid = "1547DBE1-0E9A-4264-ADD4-E4CFB021C2D4 - 5b9726e2f68bcca9"
+                  uuid = "5A381869-7445-4567-B2CC-59D09CB8CD26 - 19d1d1b982e1a5ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "updateRequest(Viewer3DApp const&amp;)"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
                   moduleName = "Viewer3D"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/interfacemanagerimpl.cpp"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "45">
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "330">
                </Location>
                <Location
-                  uuid = "1547DBE1-0E9A-4264-ADD4-E4CFB021C2D4 - 5b9726e2f68bccc6"
+                  uuid = "5A381869-7445-4567-B2CC-59D09CB8CD26 - 19d1d1b982e1a5ba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "updateRequest(Viewer3DApp const&amp;)"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
                   moduleName = "Viewer3D"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/interfacemanagerimpl.cpp"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "45">
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "329">
+               </Location>
+               <Location
+                  uuid = "5A381869-7445-4567-B2CC-59D09CB8CD26 - 19d1d1b982e1a5f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "trace(RayTracer&amp;, unsigned int)"
+                  moduleName = "Viewer3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danmac/3d-viewer/Viewer3D/xcode/raytracer.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "300">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA9EDB31-92FD-4BDD-868D-ABC438E1E812"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tracing.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "traceBeam(beam, objects, spheres, brCalcArgs)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B752E0C0-EB40-4BAE-96BA-7DA5D30FA0A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "brightness.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "traceBrightness(collision, sources, objects, spheres)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1B511A2-724F-4B76-8A57-0BD6964F31BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beamsegment.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "transmittedRay(ray, point, n, optDensity)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3C7DCBB-C725-4611-9108-516656F00DFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mathutils.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "afterTransitionDir(r, n, k1, k2)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
