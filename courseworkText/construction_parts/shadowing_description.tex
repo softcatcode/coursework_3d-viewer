@@ -76,11 +76,10 @@
                 направлении $\vec{\omega}$.
                 \item $\Phi$ -- поток света, достигший от источнока до $p$ (хранится в RSM).
             \end{itemize}
-            Тогда выполнено равенство \ref{f:I_p} [2].
-            \ref{f:I_p}.
+            Тогда выполнено равенство (\ref{f:I_p}):
             \begin{equation}
                 \label{f:I_p}
-                I_p(\vec{\omega}) = k\Phi max\{0, (\vec{n_p}, \vec{\omega})\}
+                I_p(\vec{\omega}) = k\Phi \operatorname{max}\{0, (\vec{n_p}, \vec{\omega})\}~[2].
             \end{equation}
             Пусть:
             \begin{itemize}
@@ -90,18 +89,18 @@
                     который представлен в задании;
                 \item разностью точек $A - B$ является вектор $\vec{AB}$.
             \end{itemize}
-            Тогда справедлива формула \ref{E_p} [2].
+            Тогда справедлива формула \ref{f:E_p}:
             \begin{equation}
                 \label{f:E_p}
-                E_p(x, p) = k\Phi\frac{ max\{0, (n_p, x - x_p)\}
-                max\{0, (n_x, x_p - x)\} }
-                {|x - x_p|^4}
+                E_p(x, p) = k\Phi\frac{ \operatorname{max}\{0, (n_p, x - x_p)\}
+                \operatorname{max}\{0, (n_x, x_p - x)\} }
+                {|x - x_p|^4}~[2].
             \end{equation}
             Значение дополнительной яркости точки засчёт отражений
-            обозначено как $E(x, p)$ и вычисляется по формуле \ref{f:E}~[2].
+            обозначено как $E(x, p)$ и вычисляется по формуле \ref{f:E}:
             \begin{equation}
                 \label{f:E}
-                E(x, p) = \sum_p E_p(x, p)
+                E(x, p) = \sum_p E_p(x, p)~[2].
             \end{equation}
         }
         \subsection{Выбор элементов буфера, вносящих вклад в освещение от отражений} {
@@ -114,13 +113,13 @@
             которые близки к позиции $(i_0, j_0)$.
             Следует производить выбор очередных индексов $(i, j)$
             по следующему алгоритму [2]:
-            \begin{itemize}
+            \begin{enumerate}
                 \item
                     генерируется 2 случайных вещественных числа
                     $\alpha, \beta$ из нормального распределения от 0 до 1;
                 \item $i := i_1 + r_{max} \cdot \mathbf{\alpha} \sin(2\pi\beta)$;
                 \item $j' := j_1 + r_{max} \cdot \mathbf{\alpha} \cos(2\pi\beta)$.
-            \end{itemize}
+            \end{enumerate}
             Таким образом, имеем элемент буфера источника на позиции $(i, j)$,
             который будет участвовать в расчёте яркости от отражений для точки $P$.
         }

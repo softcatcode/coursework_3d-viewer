@@ -78,7 +78,7 @@
         Это уменьшит трудоёмкость вычислений.
         В итоге для нахождения пересечения параметрически заданной прямой и
         грани программе нужно будет выполнить следующие действия:
-        \begin{itemize}
+        \begin{enumerate}
             \item найти скалярное произведение $\alpha$ векторов $\vec{v}$ и $\vec{n}$;
             \item если значение $|\alpha|$ близко к 0, то завершить алгоритм, так как пересечение отсутствует.
             \item выбрать на плоскости точку $P$ -- можно взять вершину грани;
@@ -86,7 +86,7 @@
             \item вычислить значение $k = \frac{\alpha}{\psi}$;
             \item передвинуть точку $O$ вдоль вектора $k \cdot \vec{v}$ и получить $O'$;
             \item проверить принадлежность $O'$ грани $P_1P_2P_3$.
-        \end{itemize}
+        \end{enumerate}
     }
     \subsection{Определение принадлежности точки грани} {
         Описанный ранее метод содержит подзадачу определения
@@ -97,10 +97,11 @@
         нужно проверить равенство $S(ABC) = S(PAB) + S(PBC) + S(PAC)$.
         Если оно выполнено, то точка лежит внутри треугольника.
         Функция площади $S(t)$ может быть вычислена по трём сторонам
-        треугольника по формуле Герона \ref{f:geron}, где $a, b, c$ -- стороны треугольника, а $p$ -- полупериметр.
+        треугольника по формуле Герона (\ref{f:geron}),
+        где $a, b, c$ -- стороны треугольника, а $p$ -- полупериметр:
         \begin{equation}
             \label{f:geron}
-            S = \sqrt{p(p - a)(p - b)(p - c)}
+            S = \sqrt{p(p - a)(p - b)(p - c)}.
         \end{equation}
     }
 }
@@ -112,20 +113,20 @@
     Пусть задан базис $B = (\vec{x}, \vec{y}, \vec{z})$
     с началом координат в точке $O$,
     а вектора $\vec{i} = (1, 0, 0)^T, \vec{j} = (0, 1, 0)^T, \vec{k} = (0, 0, 1)^T$
-    представляются как \ref{f:i}--\ref{f:k}.
+    представляются как (\ref{f:i})--(\ref{f:k}):
     \begin{equation}
         \label{f:i}
-        i = x_i \cdot \vec{x} + y_i \cdot \vec{y} + z_i \cdot \vec{z}
+        i = x_i \cdot \vec{x} + y_i \cdot \vec{y} + z_i \cdot \vec{z};
     \end{equation}
      \begin{equation}
         \label{f:j}
-        j = x_j \cdot \vec{x} + y_j \cdot \vec{y} + z_j \cdot \vec{z}
+        j = x_j \cdot \vec{x} + y_j \cdot \vec{y} + z_j \cdot \vec{z};
     \end{equation}
      \begin{equation}
         \label{f:k}
-        k = x_k \cdot \vec{x} + y_k \cdot \vec{y} + z_k \cdot \vec{z}
+        k = x_k \cdot \vec{x} + y_k \cdot \vec{y} + z_k \cdot \vec{z}.
     \end{equation}
-    Тогда матрица перехода $T$ к базису $B$ представляется в виде \ref{f:tr_mat}. \\
+    Тогда матрица перехода $T$ к базису $B$ представляется в виде (\ref{f:tr_mat}): \\
     \begin{equation}
         T = \begin{bmatrix}
             \label{f:tr_mat}
@@ -135,16 +136,16 @@
         \end{bmatrix}.
     \end{equation}
     
-    Координаты вектора $\vec{a}$ относительно базиса $B$ можно выразить по формуле \ref{f:vec_trans}.
+    Координаты вектора $\vec{a}$ относительно базиса $B$ можно выразить по формуле (\ref{f:vec_trans}):.
     \begin{equation}
         \label{f:vec_trans}
-        \vec{a'} = T \times \vec{a}
+        \vec{a'} = T \times \vec{a}.
     \end{equation}
     Радиус-вектор точки $P$ относительно базиса $B$
-    рассчитывается по формуле \ref{f:point_trans}.
+    рассчитывается по формуле (\ref{f:point_trans}):
     \begin{equation}
         \label{f:point_trans}
-        \vec{P'} = -\vec{O} + (T \times \vec{P})
+        \vec{P'} = -\vec{O} + (T \times \vec{P}).
     \end{equation}
     Имея способ преобразования координат точки и вектора к другой системе координат,
     можно преобразовать к ней любой объект.

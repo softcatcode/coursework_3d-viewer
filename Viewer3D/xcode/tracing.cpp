@@ -23,7 +23,7 @@ pair<BeamSegment, BeamSegment> split(BeamSegment const& beamSeg, Collision const
     Color transLight = collision.color * t;
     Color reflLight = min(collision.color - transLight, obj.getColor());
     
-    BeamSegment reflected = {w
+    BeamSegment reflected = {
         reflRay,
         beamSeg.color + reflLight * beamSeg.nextReflectionWeight,
         beamSeg.collisionCount + 1,

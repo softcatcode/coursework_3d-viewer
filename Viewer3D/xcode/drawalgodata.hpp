@@ -20,12 +20,13 @@ struct DrawAlgoData
     unsigned imgWidth, imgHeight, step;
     Surface image;
     bool updateReq = true;
-    BrightnessCalcMethod shadowingMethod = BrightnessCalcMethod::rsm;
+    BrightnessCalcMethod shadowingMethod = BrightnessCalcMethod::fong;
     
     bool needsUpdate() const { return updateReq; }
+    bool needsTracerInit() const { return step == 8; }
     void resumeUpdates() {
         updateReq = true;
-        step = 8U;
+        step = 1;
     }
     void stopUpdate() { updateReq = false; }
 };
